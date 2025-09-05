@@ -169,12 +169,12 @@ languages:
 awards:
   - title: Grants for Graduate Students Study Abroad Program
     url: ''
-    date: '2021 December'
+    date: 2021-12-01
     awarder: MOST Taiwan
     icon: taiwan
   - title: Semi-finalist and IBM SPSS Modeler Best Application Award
     url: ''
-    date: '2023 Summer'
+    date: 2015-08-31
     awarder: Taiwan Semiconductor Manufacturing Company (TSMC) 
     icon: tsmc
   
