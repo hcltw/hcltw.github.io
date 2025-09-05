@@ -143,7 +143,7 @@ skills:
       - name: Coffee
         description: ''
         percent: 60
-        icon: coffee
+        icon: custom/coffee
       - name: Cats
         description: ''
         percent: 100
