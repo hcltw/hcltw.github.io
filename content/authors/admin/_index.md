@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Dr. Hsu-Chao Lai
+title: Hsu-Chao Lai
 
 # Name pronunciation (optional)
 name_pronunciation: ''
@@ -45,28 +45,27 @@ profiles:
 
 interests:
   - Recommender Systems
-  - Social Networks and Applications
+  - Social Network Analysis
   - Cross-domain Collaborations
 
 education:
-  - area: PhD in Computer Science
+  - area: _PhD in Computer Science_
     institution: National Yang Ming Chiao Tung University (NYCU)
     date_start: 2016-08-01
     date_end: 2024-07-31
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-  - area: Master in Computer Science
+      Thesis on _Recommender Systems for Next-Generation Applications on Social Networks_. Supervised by [Prof Jiun-Long Huang](https://www.cs.nycu.edu.tw/members/detail/jlhuang) and [Prof Hong-Han Shuai](https://basiclab.lab.nycu.edu.tw/). Presented papers at 11 conferences with the contributions being published in 3 journals.
+  - area: _Master in Computer Science_
     institution: National Chiao Tung University (NCTU)
     date_start: 2014-08-01
     date_end: 2016-07-31
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+      Thesis on _Traffic Prediction for Real-Time Bidding Platforms_, presented at a workshop in IEEE BigData 2016. Supervised by [Prof Jiun-Long Huang](https://www.cs.nycu.edu.tw/members/detail/jlhuang).
   - area: BS in EECS Honor Program
     institution: National Chiao Tung University (NCTU)
     date_start: 2010-08-01
     date_end: 2014-06-30
-    summary: |
-      ''
+
 work:
   - position: Postdoctoral Researcher
     company_name: National Cheng Kung University
@@ -171,12 +170,12 @@ awards:
     url: ''
     date: 2021-12-01
     awarder: MOST Taiwan
-    icon: taiwan
+    icon: assets/media/icons/taiwan
   - title: Semi-finalist and IBM SPSS Modeler Best Application Award
     url: ''
     date: 2015-08-31
     awarder: Taiwan Semiconductor Manufacturing Company (TSMC) 
-    icon: tsmc
+    icon: assets/media/icons/tsmc
   
 ---
 
