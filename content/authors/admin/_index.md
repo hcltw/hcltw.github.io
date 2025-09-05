@@ -140,10 +140,10 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: Coffee
         description: ''
         percent: 60
-        icon: person-simple-walk
+        icon: ☕️
       - name: Cats
         description: ''
         percent: 100
@@ -170,12 +170,12 @@ awards:
     url: ''
     date: 2021-12-01
     awarder: MOST Taiwan
-    icon: assets/media/icons/taiwan
+    icon: 🧋
   - title: Semi-finalist and IBM SPSS Modeler Best Application Award
     url: ''
     date: 2015-08-31
     awarder: Taiwan Semiconductor Manufacturing Company (TSMC) 
-    icon: assets/media/icons/tsmc
+    icon: 🧋
   
 ---
 
