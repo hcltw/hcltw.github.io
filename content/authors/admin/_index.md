@@ -142,8 +142,8 @@ skills:
     items:
       - name: Coffee
         description: ''
-        percent: 60
-        icon: coffee
+        percent: 100
+        icon: custom/coffee
         icon_pack: custom
       - name: Cats
         description: ''
