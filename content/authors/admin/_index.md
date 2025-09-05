@@ -144,7 +144,6 @@ skills:
         description: ''
         percent: 100
         icon: custom/coffee
-        icon_pack: custom
       - name: Cats
         description: ''
         percent: 100
