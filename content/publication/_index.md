@@ -2,6 +2,10 @@
 title: Publications
 cms_exclude: true
 
+body {
+  background-color: #008080;
+}
+
 # View.
 view: citation
 
