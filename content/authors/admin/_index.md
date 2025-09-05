@@ -181,4 +181,4 @@ awards:
 
 ## About Me
 
-Dr. Hsu-Chao Lai is currently a independent researcher, specializing in recommender systems, social network analysis, and cross-domain data mining. His research interests span interdisciplinary topics, including applications in e-commerce, financial products, sport science, and healthcare. Dr. Lai has participated in many interdisciplinary research projects at leading institutions. He has extensive teaching experience and is actively involved in volunteering to help international students and other underprivileged groups with after-school tutoring. 
+Dr. Hsu-Chao Lai is currently a independent researcher, specializing in recommender systems, social network analysis, and cross-domain data mining. His research interests span interdisciplinary topics, including applications in financial products, sport science, and healthcare. Dr. Lai has participated in many interdisciplinary research projects at leading institutions. He has extensive teaching experience and is actively involved in volunteering to help international students and other underprivileged groups with after-school tutoring. 

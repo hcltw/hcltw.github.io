@@ -39,9 +39,9 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I'm a independent research scientist looking for faculty positions or research jobs in Taiwan and USA. I apply a range of machine learning methods to comprehensively investigate the role of science and technology in various domains.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        I am passionate about teaching, with a focus on translating cutting‑edge research into clear, hands‑on learning experiences that empower students to become independent thinkers.
         
         Please reach out to collaborate 😃
     design:
