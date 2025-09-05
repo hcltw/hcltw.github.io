@@ -10,7 +10,7 @@ first_name: Hsu-Chao
 last_name: Lai
 
 # Pronouns (optional)
-pronouns: ''
+pronouns: 
 
 # Status emoji
 status:
@@ -27,8 +27,8 @@ role: Independent Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: 'Opening for Jobs'
-    url: '
+  - name: Opening for Jobs
+    url: 
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
