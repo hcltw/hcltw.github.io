@@ -5,7 +5,9 @@
 
 # Appearance
 appearance:
-  mode: light
+  #mode: light
+  theme_day: snorlax
+  theme_night: morandi
   color: morandi
 
 # SEO
