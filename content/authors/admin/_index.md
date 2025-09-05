@@ -42,8 +42,6 @@ profiles:
     url: https://scholar.google.com/citations?user=q4ou82sAAAAJ&hl=en
   - icon: academicons/orcid
     url: https://orcid.org/0009-0002-9690-8461
-  - icon: academicons/dblp
-    url: https://dblp.org/pid/194/7730.html
 
 interests:
   - Recommender Systems
