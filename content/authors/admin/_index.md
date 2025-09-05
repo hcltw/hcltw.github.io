@@ -49,13 +49,13 @@ interests:
   - Cross-domain Collaborations
 
 education:
-  - area: _PhD in Computer Science_
+  - area: PhD in Computer Science
     institution: National Yang Ming Chiao Tung University (NYCU)
     date_start: 2016-08-01
     date_end: 2024-07-31
     summary: |
       Thesis on _Recommender Systems for Next-Generation Applications on Social Networks_. Supervised by [Prof Jiun-Long Huang](https://www.cs.nycu.edu.tw/members/detail/jlhuang) and [Prof Hong-Han Shuai](https://basiclab.lab.nycu.edu.tw/). Presented papers at 11 conferences with the contributions being published in 3 journals.
-  - area: _Master in Computer Science_
+  - area: Master in Computer Science
     institution: National Chiao Tung University (NCTU)
     date_start: 2014-08-01
     date_end: 2016-07-31
