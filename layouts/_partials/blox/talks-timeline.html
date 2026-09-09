@@ -1,0 +1,26 @@
+{{ $block := .wcBlock }}
+
+<div class="flex flex-col items-center mx-auto w-full max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl px-6 sm:px-0">
+  <div class="w-full">
+    <h3 class="mb-6 text-3xl font-bold text-gray-900 dark:text-white text-center">{{ $block.content.title }}</h3>
+    <ol class="relative w-full border-s border-gray-200 dark:border-gray-700">
+      {{ range $block.content.items }}
+        <li class="mb-10 ms-6">
+          <span class="absolute flex items-center justify-center w-6 h-6 bg-primary-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-4 h-4 text-primary-800 dark:text-primary-300" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-12 0v1.5a6 6 0 0 0 6 6m0 0v3.75m-3 0h6M12 15.75a3 3 0 0 0 3-3V4.5a3 3 0 0 0-6 0v8.25a3 3 0 0 0 3 3Z" />
+            </svg>
+          </span>
+          <div class="flex flex-wrap items-center gap-2 mb-1">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ .title }}</h3>
+            <span class="rounded bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ .type }}</span>
+          </div>
+          <span class="block mb-2 text-sm font-normal leading-snug text-gray-500 dark:text-gray-300">{{ .venue }}</span>
+          <time class="block text-sm font-normal leading-none text-gray-500 dark:text-gray-300" datetime="{{ .date }}">
+            {{ (time .date) | time.Format "January 2006" }}
+          </time>
+        </li>
+      {{ end }}
+    </ol>
+  </div>
+</div>

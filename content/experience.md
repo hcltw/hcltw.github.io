@@ -19,20 +19,28 @@ sections:
       date_format: 'January 2006'
       # Education or Experience section first?
       is_education_first: false
-  - block: markdown
+  - block: talks-timeline
     content:
       title: Invited Talks & Outreach
-      text: |-
-        ### Invited Talks
-
-        - **Recommender Systems: From Social Apps to Healthcare** — Kanazawa University, June 2026
-        - **Recommender Systems: From Social Apps to Healthcare** — Department of Information Management, National Taiwan University of Science and Technology, May 2026
-        - **Recommender Systems: From Social Apps to Healthcare** — Computer Science Seminar, National Yang Ming Chiao Tung University, March 2026
-
-        ### Outreach & Workshops
-
-        - **What Is Machine Learning? Build Your Own Game Controller with AI** — Tatung High School, July 2026
-        - **Hands-on Introduction to AI** — Department of Nursing, National Sun Yat-sen University, November 2025
-    design:
-      columns: '1'
+      items:
+        - title: What Is Machine Learning? Build Your Own Game Controller with AI
+          venue: Tatung High School
+          date: 2026-07-01
+          type: Outreach
+        - title: 'Recommender Systems: From Social Apps to Healthcare'
+          venue: Kanazawa University
+          date: 2026-06-01
+          type: Invited Talk
+        - title: 'Recommender Systems: From Social Apps to Healthcare'
+          venue: Department of Information Management, National Taiwan University of Science and Technology
+          date: 2026-05-01
+          type: Seminar
+        - title: 'Recommender Systems: From Social Apps to Healthcare'
+          venue: Computer Science Seminar, National Yang Ming Chiao Tung University
+          date: 2026-03-01
+          type: Seminar
+        - title: Hands-on Introduction to AI
+          venue: Department of Nursing, National Sun Yat-sen University
+          date: 2025-11-01
+          type: Workshop
 ---
