@@ -6,7 +6,14 @@
 {{ $dialog_id := printf "feedback-%s" $key }}
 
 <div class="course-feedback" aria-label="Course evaluation summary">
-  <p class="course-feedback-meta"><strong>{{ $feedback.response_count }}</strong> student responses · Percentage selecting <strong>Strongly agree</strong></p>
+  <p class="course-feedback-meta"><strong>{{ $feedback.response_count }}</strong> student responses · Positive ratings (<strong>Strongly agree</strong> + <strong>Agree</strong>)</p>
+
+  {{ if isset (index $feedback.metrics 0) "strongly_agree" }}
+    <div class="course-feedback-legend" aria-label="Rating legend">
+      <span><i class="course-feedback-legend-strong"></i>5 · Strongly agree</span>
+      <span><i class="course-feedback-legend-agree"></i>4 · Agree</span>
+    </div>
+  {{ end }}
 
   <div class="course-feedback-rings">
     {{ range $feedback.metrics }}
@@ -27,13 +34,6 @@
       </div>
     {{ end }}
   </div>
-
-  {{ if isset (index $feedback.metrics 0) "strongly_agree" }}
-    <div class="course-feedback-legend" aria-label="Rating legend">
-      <span><i class="course-feedback-legend-strong"></i>5 · Strongly agree</span>
-      <span><i class="course-feedback-legend-agree"></i>4 · Agree</span>
-    </div>
-  {{ end }}
 
   <button type="button" class="course-feedback-button" onclick="document.getElementById('{{ $dialog_id }}').showModal()">
     View full evaluation
