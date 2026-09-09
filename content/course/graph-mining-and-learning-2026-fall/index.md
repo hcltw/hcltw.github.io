@@ -19,3 +19,9 @@ tags:
 ## Overview
 
 This course equips students with the core principles and practical skills of graph mining and representation learning. Topics span classical algorithms, including PageRank and community detection, modern graph neural networks (GNNs), and the integration of graph structures with large language models (LLMs) to address large-scale, real-world data challenges. In-class presentations and project discussions are also central components of the learning experience.
+
+## Student Feedback
+
+### Fall 2026
+
+Feedback will be added here after the course concludes.

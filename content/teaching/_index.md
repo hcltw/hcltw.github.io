@@ -22,20 +22,4 @@ sections:
   - block: courses
     content:
       title: Current & Recent Courses
-  - block: markdown
-    content:
-      title: Student Feedback
-      subtitle: Learning experiences and course development
-      text: |-
-        I use student feedback to refine course content, pacing, assignments, and classroom activities. Course-evaluation summaries and selected anonymous comments will be presented here.
-
-        **Spring 2026 — Data Mining**
-
-        Feedback will be added here.
-
-        **Spring 2026 — Probability and Statistics**
-
-        Feedback will be added here.
-    design:
-      columns: '1'
 ---
