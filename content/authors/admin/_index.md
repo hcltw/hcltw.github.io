@@ -192,3 +192,5 @@ awards:
 ## About Me
 
 Dr. Hsu-Chao Lai is an Assistant Professor in the Department of Artificial Intelligence at Chang Gung University. His research focuses on recommender systems, social network analysis, and interdisciplinary data mining, with applications in healthcare, sports analytics, online platforms, and intelligent decision-making. He is also passionate about teaching data mining and graph learning, and welcomes collaborations that connect machine learning research with real-world challenges.
+
+Solo traveler, hand-brew coffee enthusiast, and curious listener.
