@@ -46,6 +46,7 @@ sections:
         To apply, email me with your CV, transcript, and a brief, relevant research proposal.
     design:
       columns: '1'
+      css_class: recruiting-students-section
   - block: collection
     id: papers
     content:

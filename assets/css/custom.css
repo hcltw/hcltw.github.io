@@ -260,6 +260,17 @@
   border-color: rgb(75 85 99);
 }
 
+/* Give the homepage recruiting copy room to breathe on desktop. */
+.recruiting-students-section > .flex {
+  width: 100%;
+  max-width: 64rem;
+}
+
+.recruiting-students-section .prose {
+  width: 100%;
+  max-width: none;
+}
+
 /* Full publications list */
 .publication-sections {
   width: 100%;
