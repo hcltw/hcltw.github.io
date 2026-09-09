@@ -30,7 +30,7 @@ sections:
         - title: 'Recommender Systems: From Social Apps to Healthcare'
           venue: Kanazawa University
           date: 2026-06-01
-          type: Invited Talk
+          type: Seminar
         - title: 'Recommender Systems: From Social Apps to Healthcare'
           venue: Department of Information Management, National Taiwan University of Science and Technology
           date: 2026-05-01
