@@ -14,6 +14,7 @@ sections:
     content:
       username: admin
     design:
+      css_class: consistent-page-heading
       # Hugo date format
       date_format: 'January 2006'
       # Education or Experience section first?

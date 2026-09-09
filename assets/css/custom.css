@@ -1,0 +1,14 @@
+/* Match top-level landing-page headings to the Publications page title. */
+.blox-markdown.consistent-page-heading .text-3xl,
+.blox-resume-experience.consistent-page-heading .w-full:first-child > h3:first-child {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .blox-markdown.consistent-page-heading .text-3xl,
+  .blox-resume-experience.consistent-page-heading .w-full:first-child > h3:first-child {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}

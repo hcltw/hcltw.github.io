@@ -1,0 +1,25 @@
+{{/* Course cards styled to match the resume Awards block. */}}
+{{ $block := .wcBlock }}
+{{ $course_section := site.GetPage "/course" }}
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    {{ $block.content.title | markdownify | emojify }}
+  </div>
+
+  <div class="w-full flex flex-col gap-6">
+    {{ range sort $course_section.RegularPages "Params.weight" "asc" }}
+      <a href="{{ .RelPermalink }}" class="group block w-full p-6 bg-white border border-gray-200 rounded-lg shadow transition hover:-translate-y-0.5 hover:shadow-md dark:bg-gray-800 dark:border-gray-700">
+        {{ with index .Params.tags 0 }}
+          <span class="inline-block mb-3 text-xs font-medium tracking-wider uppercase text-primary-700 dark:text-primary-300">{{ . }}</span>
+        {{ end }}
+        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-300">
+          {{ .Title }}
+        </h5>
+        <div class="text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
+          {{ delimit .Params.semesters " / " }}
+        </div>
+      </a>
+    {{ end }}
+  </div>
+</div>
