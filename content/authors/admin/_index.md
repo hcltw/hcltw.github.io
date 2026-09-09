@@ -34,7 +34,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:hclreadspaper@gmail.com'
+    url: 'mailto:hsuchaolai@cgu.edu.tw'
     label: E-mail Me
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/hsu-chao-lai-16b386aa/

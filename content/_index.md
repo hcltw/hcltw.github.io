@@ -36,14 +36,13 @@ sections:
           parallax: false
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: '📚 Recruiting Students'
       subtitle: ''
       text: |-
-        I'm a independent research scientist looking for faculty positions or research jobs in Taiwan and USA. I apply a range of machine learning methods to comprehensively investigate the role of science and technology in various domains.
-
-        I am passionate about teaching, with a focus on translating cutting‑edge research into clear, hands‑on learning experiences that empower students to become independent thinkers.
-        
-        Please reach out to collaborate 😃
+        - **Position:** Master's Students
+        - **Research Topics:** Recommender Systems, Social Networks, Intelligent Decision-Making, or other Data Mining and Machine Learning topics you are passionate about
+        - **Preferred Skills:** Python, basic machine learning, independent learning
+        - **Required Materials:** Email me with a brief self-introduction, CV, transcript, and a relevant research proposal
     design:
       columns: '1'
   # - block: collection
