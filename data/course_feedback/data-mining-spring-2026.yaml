@@ -1,66 +1,66 @@
-response_count: 39
-course_title: Probability and Statistics
+response_count: 41
+course_title: Data Mining
 semester: Spring 2026
 scale_note: Percent of respondents selecting each option. Values may not total 100% due to rounding.
 metrics:
   - name: Teaching Enthusiasm
-    percent: 97
+    percent: 93
   - name: Student Support
-    percent: 92
-  - name: Clarity & Organization
     percent: 90
+  - name: Clarity & Organization
+    percent: 85
 questions:
   - text: The instructor was consistently punctual and did not leave early or miss class without reason.
-    strongly_agree: 92
-    agree: 8
+    strongly_agree: 98
+    agree: 2
     neutral: 0
     disagree: 0
     strongly_disagree: 0
   - text: The instructor taught with enthusiasm, diligence, and a strong sense of responsibility.
-    strongly_agree: 97
-    agree: 3
+    strongly_agree: 93
+    agree: 7
     neutral: 0
     disagree: 0
     strongly_disagree: 0
   - text: The instructor was readily available to answer questions and discuss course material with students.
-    strongly_agree: 92
-    agree: 8
+    strongly_agree: 90
+    agree: 10
     neutral: 0
     disagree: 0
     strongly_disagree: 0
   - text: The instructor's explanations were clear and well organized.
-    strongly_agree: 90
-    agree: 5
-    neutral: 5
-    disagree: 0
+    strongly_agree: 85
+    agree: 10
+    neutral: 2
+    disagree: 2
     strongly_disagree: 0
   - text: The instructor's teaching methods stimulated interest and encouraged students to think critically.
-    strongly_agree: 77
-    agree: 13
-    neutral: 10
+    strongly_agree: 78
+    agree: 20
+    neutral: 2
     disagree: 0
     strongly_disagree: 0
   - text: The course pacing was well managed and aligned with the syllabus.
-    strongly_agree: 85
-    agree: 15
+    strongly_agree: 90
+    agree: 10
     neutral: 0
     disagree: 0
     strongly_disagree: 0
   - text: The teaching materials effectively supported learning.
-    strongly_agree: 79
-    agree: 18
-    neutral: 3
+    strongly_agree: 83
+    agree: 10
+    neutral: 7
     disagree: 0
     strongly_disagree: 0
   - text: The instructor provided sufficient background knowledge and course content.
-    strongly_agree: 87
-    agree: 10
-    neutral: 3
+    strongly_agree: 85
+    agree: 12
+    neutral: 2
     disagree: 0
     strongly_disagree: 0
   - text: The grading methods and criteria were clearly explained in advance and were reasonable.
-    strongly_agree: 92
-    agree: 8
-    neutral: 0
+    strongly_agree: 93
+    agree: 5
+    neutral: 2
     disagree: 0
     strongly_disagree: 0

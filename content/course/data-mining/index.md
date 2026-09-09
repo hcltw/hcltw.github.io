@@ -27,7 +27,7 @@ Assignments combine analytical exercises with Python programming tasks to build 
 
 ### Spring 2026
 
-Feedback will be added here.
+{{< course-feedback "data-mining-spring-2026" >}}
 
 ### Fall 2026
 
