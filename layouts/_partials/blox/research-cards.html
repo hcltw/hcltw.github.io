@@ -6,11 +6,19 @@
 
   <div class="research-card-grid">
     {{ range sort $research_section.RegularPages "Params.weight" "asc" }}
+      {{ $research := . }}
       <a href="{{ .RelPermalink }}" class="research-card">
-        <div class="research-video-placeholder" aria-label="Video placeholder">
-          <span class="research-play-icon" aria-hidden="true">▶</span>
-          <span>Video coming soon</span>
-        </div>
+        {{ with .Params.image }}
+          {{ with resources.Get . }}
+            {{ $card_image := .Fill "960x540 webp q82" }}
+            <img class="research-card-image" src="{{ $card_image.RelPermalink }}" alt="{{ $research.Params.image_alt }}" loading="lazy" width="{{ $card_image.Width }}" height="{{ $card_image.Height }}">
+          {{ end }}
+        {{ else }}
+          <div class="research-video-placeholder" aria-label="Video placeholder">
+            <span class="research-play-icon" aria-hidden="true">▶</span>
+            <span>Video coming soon</span>
+          </div>
+        {{ end }}
         <div class="research-card-body">
           <h2>{{ .Title }}</h2>
           <p>{{ .Params.summary }}</p>

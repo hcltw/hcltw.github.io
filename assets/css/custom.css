@@ -371,6 +371,19 @@
   font-weight: 600;
 }
 
+.research-card-image,
+.research-detail-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.research-detail-image {
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
+}
+
 .research-play-icon {
   display: grid;
   width: 2.5rem;

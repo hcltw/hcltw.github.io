@@ -2,6 +2,8 @@
 title: Social Influence in Networks
 summary: Understanding how people shape one another's behavior online.
 weight: 20
+image: media/research/social-influence-networks.png
+image_alt: Interactions among streamers and viewers on a live-streaming platform
 keywords:
   - Social Networks
   - User Interaction

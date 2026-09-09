@@ -2,10 +2,17 @@
 <article class="research-detail">
   <h1>{{ .Title }}</h1>
 
-  <div class="research-detail-video" aria-label="Video placeholder">
-    <span class="research-play-icon" aria-hidden="true">▶</span>
-    <span>Video coming soon</span>
-  </div>
+  {{ with .Params.image }}
+    {{ with resources.Get . }}
+      {{ $detail_image := .Fill "1600x900 webp q85" }}
+      <img class="research-detail-image" src="{{ $detail_image.RelPermalink }}" alt="{{ $.Params.image_alt }}" width="{{ $detail_image.Width }}" height="{{ $detail_image.Height }}">
+    {{ end }}
+  {{ else }}
+    <div class="research-detail-video" aria-label="Video placeholder">
+      <span class="research-play-icon" aria-hidden="true">▶</span>
+      <span>Video coming soon</span>
+    </div>
+  {{ end }}
 
   <div class="research-description">
     {{ .Content }}

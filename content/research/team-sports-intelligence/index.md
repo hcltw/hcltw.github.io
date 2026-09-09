@@ -2,6 +2,8 @@
 title: Team Sports Intelligence
 summary: Revealing team dynamics and tactics through movement data.
 weight: 30
+image: media/research/team-sports-intelligence.png
+image_alt: Tactical movement analysis in doubles badminton
 keywords:
   - Team Dynamics
   - Tactical Analysis

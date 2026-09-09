@@ -2,6 +2,8 @@
 title: Group Recommendation
 summary: Reconciling diverse preferences for decisions made together.
 weight: 10
+image: media/research/group-recommendation.png
+image_alt: A virtual-reality group shopping scene
 keywords:
   - Group Recommendation
   - Preference Conflict
