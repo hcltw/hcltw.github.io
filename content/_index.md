@@ -42,7 +42,8 @@ sections:
         - **Position:** Master's Students
         - **Research Topics:** Recommender Systems, Social Networks, Intelligent Decision-Making, or other Data Mining and Machine Learning topics you are passionate about
         - **Preferred Skills:** Python, basic machine learning, independent learning
-        - **Required Materials:** Email me with a brief self-introduction, CV, transcript, and a relevant research proposal
+
+        To apply, email me with a brief self-introduction, CV, transcript, and a relevant research proposal.
     design:
       columns: '1'
   # - block: collection
