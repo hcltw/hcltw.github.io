@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+<div class="max-w-prose mx-auto flex justify-center">
+  <article class="prose prose-slate lg:prose-xl dark:prose-invert">
+    <h1 class="lg:text-6xl">{{ .Title }}</h1>
+    {{ .Content }}
+  </article>
+</div>
+
+{{ $view := .Params.view | default "citation" }}
+{{ $block := . }}
+{{ $journals := where .Pages "Params.publication_types" "intersect" (slice "article-journal") }}
+{{ $conferences := where .Pages "Params.publication_types" "intersect" (slice "paper-conference") }}
+{{ $number := newScratch }}
+{{ $number.Set "value" (len .Pages) }}
+
+<div class="publication-sections">
+  <section class="publication-section" aria-labelledby="journal-articles">
+    <h2 id="journal-articles">Journal Articles</h2>
+    <div class="publication-list">
+      {{ range $index, $item := $journals.ByDate.Reverse }}
+        <div class="publication-numbered-item">
+          <span class="publication-number" aria-label="Publication number {{ $number.Get "value" }}">{{ $number.Get "value" }}.</span>
+          {{ partial "functions/render_view" (dict "page" $block "item" . "view" $view "index" $index) }}
+        </div>
+        {{ $number.Add "value" -1 }}
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="publication-section" aria-labelledby="conference-papers">
+    <h2 id="conference-papers">Conference Papers</h2>
+    <div class="publication-list">
+      {{ range $index, $item := $conferences.ByDate.Reverse }}
+        <div class="publication-numbered-item">
+          <span class="publication-number" aria-label="Publication number {{ $number.Get "value" }}">{{ $number.Get "value" }}.</span>
+          {{ partial "functions/render_view" (dict "page" $block "item" . "view" $view "index" $index) }}
+        </div>
+        {{ $number.Add "value" -1 }}
+      {{ end }}
+    </div>
+  </section>
+</div>
+
+{{ end }}

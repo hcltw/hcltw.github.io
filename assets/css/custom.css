@@ -259,3 +259,49 @@
 .dark .course-feedback-table td {
   border-color: rgb(75 85 99);
 }
+
+/* Full publications list */
+.publication-sections {
+  width: 100%;
+  max-width: 48rem;
+  margin: 3rem auto 0;
+  padding: 0 1.5rem;
+}
+
+.publication-section + .publication-section {
+  margin-top: 4rem;
+}
+
+.publication-section h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.publication-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.publication-numbered-item {
+  display: grid;
+  grid-template-columns: 2.25rem minmax(0, 1fr);
+  align-items: start;
+}
+
+.publication-numbered-item .pub-list-item {
+  margin-bottom: 1rem !important;
+}
+
+.publication-number {
+  padding-top: 0.05rem;
+  color: rgb(107 114 128);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.dark .publication-number {
+  color: rgb(156 163 175);
+}
