@@ -8,9 +8,12 @@ keywords:
   - Multi-Feedback Learning
   - Social Computing
 references:
-  - /publication/dblp-journalspvldb-ko-lslyy-20
-  - /publication/dblp-confcikm-lai-syhly-19
-  - /publication/dblp-confcikm-lai-tshly-20
+  - page: /publication/dblp-journalspvldb-ko-lslyy-20
+    venue: PVLDB
+  - page: /publication/dblp-confcikm-lai-syhly-19
+    venue: CIKM
+  - page: /publication/dblp-confcikm-lai-tshly-20
+    venue: CIKM
 ---
 
 Individual preferences become diverse—and often conflicting—when people make decisions together. My research develops group recommendation methods that balance personal interests, social relationships, and feedback from multiple participants rather than optimizing for a single user.

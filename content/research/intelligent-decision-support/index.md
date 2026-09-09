@@ -8,9 +8,12 @@ keywords:
   - Decision Support
   - Efficient Learning
 references:
-  - /publication/dblp-journalsjaiscr-hsu-ljhw-25
-  - /publication/dblp-confbigdataconf-lai-fwtc-24
-  - /publication/dblp-confbigdataconf-ting-swlc-25
+  - page: /publication/dblp-journalsjaiscr-hsu-ljhw-25
+    venue: JAISCR
+  - page: /publication/dblp-confbigdataconf-lai-fwtc-24
+    venue: IEEE BigData
+  - page: /publication/dblp-confbigdataconf-ting-swlc-25
+    venue: IEEE BigData
 ---
 
 Effective decision support must be technically sound and practical for the people it serves. In healthcare and long-term care, this means combining professional recommendations with each person's lifestyle, preferences, and everyday constraints.

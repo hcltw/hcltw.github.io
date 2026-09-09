@@ -8,9 +8,12 @@ keywords:
   - Live Streaming
   - Co-evolution
 references:
-  - /publication/dblp-confcikm-lai-yh-23
-  - /publication/dblp-confcikm-lai-tshly-20
-  - /publication/dblp-confwww-yu-clh-20
+  - page: /publication/dblp-confcikm-lai-yh-23
+    venue: CIKM
+  - page: /publication/dblp-confcikm-lai-tshly-20
+    venue: CIKM
+  - page: /publication/dblp-confwww-yu-clh-20
+    venue: WWW
 ---
 
 Online behavior is shaped by interaction. My research studies how streamer–viewer exchanges—such as donations and responses—and viewer–viewer relationships influence interests, engagement, and content over time.

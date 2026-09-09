@@ -21,11 +21,13 @@
   <section class="research-detail-section" aria-labelledby="selected-publications">
     <h2 id="selected-publications">Selected Publications</h2>
     <div class="research-reference-list">
-      {{ range .Params.references }}
-        {{ with site.GetPage . }}
+      {{ range $reference := .Params.references }}
+        {{ with site.GetPage $reference.page }}
           <div class="research-reference">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            <span>{{ .Date.Format "2006" }}</span>
+            {{ $external_url := .RelPermalink }}
+            {{ with .Params.doi }}{{ $external_url = printf "https://doi.org/%s" . }}{{ end }}
+            <a href="{{ $external_url }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
+            <span>{{ .Date.Format "2006" }} · {{ $reference.venue }}</span>
           </div>
         {{ end }}
       {{ end }}
