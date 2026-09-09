@@ -13,8 +13,13 @@
       <div class="course-feedback-metric">
         <div class="course-feedback-ring">
           <svg class="course-feedback-ring-svg" viewBox="0 0 288 288" aria-hidden="true">
-            <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent" class="course-feedback-ring-track" />
-            <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent" class="course-feedback-ring-value" style="stroke-dasharray: calc(2 * 22 / 7 * 120); stroke-dashoffset: calc(((2 * 22 / 7 * 120) * {{ .percent }}/100) - (2 * 22 / 7 * 120))" />
+            <circle cx="145" cy="145" r="120" pathLength="100" stroke="currentColor" stroke-width="30" fill="transparent" class="course-feedback-ring-track" />
+            {{ if isset . "strongly_agree" }}
+              <circle cx="145" cy="145" r="120" pathLength="100" stroke="currentColor" stroke-width="30" fill="transparent" class="course-feedback-ring-strong" style="stroke-dasharray: {{ .strongly_agree }} {{ sub 100 .strongly_agree }}" />
+              <circle cx="145" cy="145" r="120" pathLength="100" stroke="currentColor" stroke-width="30" fill="transparent" class="course-feedback-ring-agree" style="stroke-dasharray: {{ .agree }} {{ sub 100 .agree }}; stroke-dashoffset: -{{ .strongly_agree }}" />
+            {{ else }}
+              <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent" class="course-feedback-ring-value" style="stroke-dasharray: calc(2 * 22 / 7 * 120); stroke-dashoffset: calc(((2 * 22 / 7 * 120) * {{ .percent }}/100) - (2 * 22 / 7 * 120))" />
+            {{ end }}
           </svg>
           <span class="course-feedback-percent">{{ .percent }}%</span>
         </div>
@@ -22,6 +27,13 @@
       </div>
     {{ end }}
   </div>
+
+  {{ if isset (index $feedback.metrics 0) "strongly_agree" }}
+    <div class="course-feedback-legend" aria-label="Rating legend">
+      <span><i class="course-feedback-legend-strong"></i>5 · Strongly agree</span>
+      <span><i class="course-feedback-legend-agree"></i>4 · Agree</span>
+    </div>
+  {{ end }}
 
   <button type="button" class="course-feedback-button" onclick="document.getElementById('{{ $dialog_id }}').showModal()">
     View full evaluation

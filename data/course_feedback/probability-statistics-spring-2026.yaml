@@ -4,11 +4,17 @@ semester: Spring 2026
 scale_note: Percent of respondents selecting each option. Values may not total 100% due to rounding.
 metrics:
   - name: Teaching Enthusiasm
-    percent: 97
+    strongly_agree: 97
+    agree: 3
+    percent: 100
   - name: Student Support
-    percent: 92
+    strongly_agree: 92
+    agree: 8
+    percent: 100
   - name: Clarity & Organization
-    percent: 90
+    strongly_agree: 90
+    agree: 5
+    percent: 95
 questions:
   - text: The instructor was consistently punctual and did not leave early or miss class without reason.
     strongly_agree: 92
