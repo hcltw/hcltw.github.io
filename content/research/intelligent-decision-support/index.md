@@ -2,6 +2,8 @@
 title: Intelligent Decision Support
 summary: Combining professional knowledge with real-world human needs.
 weight: 40
+image: media/research/intelligent-decision-support.png
+image_alt: Human-centered AI supporting healthcare and long-term care decisions
 keywords:
   - Healthcare AI
   - Human-Centered AI

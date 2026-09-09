@@ -2,6 +2,8 @@
 title: Learning in Dynamic Markets
 summary: Learning adaptive strategies for advertising auctions and financial markets.
 weight: 50
+image: media/research/learning-in-dynamic-markets.png
+image_alt: Adaptive learning and decision-making in dynamic markets
 keywords:
   - Reinforcement Learning
   - Real-Time Bidding
