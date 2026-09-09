@@ -13,13 +13,8 @@ sections:
   - block: markdown
     content:
       title: Teaching
-      subtitle: Courses at Chang Gung University
-      text: |-
-        I teach undergraduate and graduate courses in data science, machine learning, and graph analytics. My courses connect mathematical foundations with practical problem solving and help students develop the skills to work independently with real-world data.
     design:
       css_class: consistent-page-heading
       columns: '1'
   - block: courses
-    content:
-      title: Current & Recent Courses
 ---

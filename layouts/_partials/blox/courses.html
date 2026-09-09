@@ -2,12 +2,14 @@
 {{ $block := .wcBlock }}
 {{ $course_section := site.GetPage "/course" }}
 
-<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
-  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
-    {{ $block.content.title | markdownify | emojify }}
-  </div>
+<div class="flex flex-col items-center max-w-5xl mx-auto gap-3 justify-center px-6">
+  {{ with $block.content.title }}
+    <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+      {{ . | markdownify | emojify }}
+    </div>
+  {{ end }}
 
-  <div class="w-full flex flex-col gap-6">
+  <div class="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
     {{ range sort $course_section.RegularPages "Params.weight" "asc" }}
       <a href="{{ .RelPermalink }}" class="group block w-full p-6 bg-white border border-gray-200 rounded-lg shadow transition hover:-translate-y-0.5 hover:shadow-md dark:bg-gray-800 dark:border-gray-700">
         {{ with index .Params.tags 0 }}
