@@ -516,3 +516,26 @@
     gap: 0.35rem;
   }
 }
+
+/* Visually distinguish undergraduate and graduate course cards. */
+.course-level-tag {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: rgb(var(--color-primary-700));
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.course-level-undergraduate {
+  color: rgb(180 83 9);
+}
+
+.dark .course-level-tag {
+  color: rgb(var(--color-primary-300));
+}
+
+.dark .course-level-undergraduate {
+  color: rgb(253 186 116);
+}
