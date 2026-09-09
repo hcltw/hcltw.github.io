@@ -23,12 +23,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Independent Researcher
+role: Assistant Professor
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Opening for Jobs
-    url: 
+  - name: Department of Artificial Intelligence, Chang Gung University
+    url: https://www.cgu.edu.tw/ai-en/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -67,6 +67,16 @@ education:
     date_end: 2014-06-30
 
 work:
+  - position: Assistant Professor
+    company_name: Chang Gung University
+    company_url: 'https://www.cgu.edu.tw/ai-en/'
+    company_logo: ''
+    date_start: 2026-02-01
+    date_end:
+    summary: |2-
+      Responsibilities include:
+      - Conduct research in recommender systems, social network analysis, and interdisciplinary data mining, with applications in healthcare, sports analytics, online platforms, and intelligent decision-making
+      - Teach courses in Data Mining and Graph Mining and Learning
   - position: Postdoctoral Researcher
     company_name: National Cheng Kung University
     company_url: ''
@@ -181,4 +191,4 @@ awards:
 
 ## About Me
 
-Dr. Hsu-Chao Lai is currently an independent researcher, specializing in recommender systems, social network analysis, and cross-domain data mining. His research interests span interdisciplinary topics, including applications in financial products, sport science, and healthcare. Dr. Lai has participated in many interdisciplinary research projects at leading institutions. He has extensive teaching experience and is actively involved in volunteering to help international students and other underprivileged groups with after-school tutoring. 
+Dr. Hsu-Chao Lai is an Assistant Professor in the Department of Artificial Intelligence at Chang Gung University. His research focuses on recommender systems, social network analysis, and interdisciplinary data mining, with applications in healthcare, sports analytics, online platforms, and intelligent decision-making. He is also passionate about teaching data mining and graph learning, and welcomes collaborations that connect machine learning research with real-world challenges.
