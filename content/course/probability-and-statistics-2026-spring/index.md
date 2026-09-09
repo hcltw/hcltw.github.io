@@ -24,4 +24,4 @@ Beginning with fundamental counting principles and Bayesian reasoning, this cour
 
 ### Spring 2026
 
-Feedback will be added here.
+{{< course-feedback "probability-statistics-spring-2026" >}}

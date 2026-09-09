@@ -1,0 +1,69 @@
+{{ $key := .Get 0 }}
+{{ $feedback := index site.Data.course_feedback $key }}
+{{ if not $feedback }}
+  {{ errorf "Course feedback data not found: %s" $key }}
+{{ end }}
+{{ $dialog_id := printf "feedback-%s" $key }}
+
+<div class="course-feedback" aria-label="Course evaluation summary">
+  <p class="course-feedback-meta"><strong>{{ $feedback.response_count }}</strong> student responses · Percentage selecting <strong>Strongly agree</strong></p>
+
+  <div class="course-feedback-rings">
+    {{ range $feedback.metrics }}
+      <div class="course-feedback-metric">
+        <div class="course-feedback-ring">
+          <svg class="course-feedback-ring-svg" viewBox="0 0 288 288" aria-hidden="true">
+            <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent" class="course-feedback-ring-track" />
+            <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent" class="course-feedback-ring-value" style="stroke-dasharray: calc(2 * 22 / 7 * 120); stroke-dashoffset: calc(((2 * 22 / 7 * 120) * {{ .percent }}/100) - (2 * 22 / 7 * 120))" />
+          </svg>
+          <span class="course-feedback-percent">{{ .percent }}%</span>
+        </div>
+        <span class="course-feedback-label">{{ .name }}</span>
+      </div>
+    {{ end }}
+  </div>
+
+  <button type="button" class="course-feedback-button" onclick="document.getElementById('{{ $dialog_id }}').showModal()">
+    View full evaluation
+  </button>
+
+  <dialog id="{{ $dialog_id }}" class="course-feedback-dialog" onclick="if (event.target === this) this.close()">
+    <div class="course-feedback-dialog-card">
+      <div class="course-feedback-dialog-header">
+        <div>
+          <h3>Spring 2026 Course Evaluation</h3>
+          <p>Probability and Statistics · {{ $feedback.response_count }} responses</p>
+        </div>
+        <button type="button" class="course-feedback-close" aria-label="Close full evaluation" onclick="this.closest('dialog').close()">&times;</button>
+      </div>
+
+      <div class="course-feedback-table-wrap">
+        <table class="course-feedback-table">
+          <thead>
+            <tr>
+              <th>Evaluation item</th>
+              <th>Strongly agree</th>
+              <th>Agree</th>
+              <th>Neutral</th>
+              <th>Disagree</th>
+              <th>Strongly disagree</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range $feedback.questions }}
+              <tr>
+                <td>{{ .text }}</td>
+                <td>{{ .strongly_agree }}%</td>
+                <td>{{ .agree }}%</td>
+                <td>{{ .neutral }}%</td>
+                <td>{{ .disagree }}%</td>
+                <td>{{ .strongly_disagree }}%</td>
+              </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+      <p class="course-feedback-note">{{ $feedback.scale_note }}</p>
+    </div>
+  </dialog>
+</div>
