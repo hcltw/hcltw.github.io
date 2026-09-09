@@ -10,11 +10,7 @@ cascade:
       show_breadcrumb: true
 
 sections:
-  - block: markdown
+  - block: courses
     content:
       title: Teaching
-    design:
-      css_class: consistent-page-heading
-      columns: '1'
-  - block: courses
 ---

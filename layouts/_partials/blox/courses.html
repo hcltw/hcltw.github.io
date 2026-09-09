@@ -2,11 +2,11 @@
 {{ $block := .wcBlock }}
 {{ $course_section := site.GetPage "/course" }}
 
-<div class="flex flex-col items-center max-w-5xl mx-auto gap-3 justify-center px-6">
+<div class="flex flex-col max-w-5xl mx-auto px-6">
   {{ with $block.content.title }}
-    <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    <h1 class="mb-8 text-4xl font-bold tracking-tight text-gray-900 lg:text-6xl dark:text-white">
       {{ . | markdownify | emojify }}
-    </div>
+    </h1>
   {{ end }}
 
   <div class="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
