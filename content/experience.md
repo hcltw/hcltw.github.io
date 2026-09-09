@@ -19,6 +19,8 @@ sections:
       date_format: 'January 2006'
       # Education or Experience section first?
       is_education_first: false
+      spacing:
+        padding: ['5rem', '0', '0', '0']
   - block: talks-timeline
     content:
       title: Invited Talks & Outreach
@@ -43,4 +45,7 @@ sections:
           venue: Department of Nursing, National Sun Yat-sen University
           date: 2025-11-01
           type: Workshop
+    design:
+      spacing:
+        padding: ['1rem', '0', '5rem', '0']
 ---
