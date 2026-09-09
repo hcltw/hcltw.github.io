@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article class="research-detail">
+  <h1>{{ .Title }}</h1>
+
+  <div class="research-detail-video" aria-label="Video placeholder">
+    <span class="research-play-icon" aria-hidden="true">▶</span>
+    <span>Video coming soon</span>
+  </div>
+
+  <div class="research-description">
+    {{ .Content }}
+  </div>
+
+  <section class="research-detail-section" aria-labelledby="research-keywords">
+    <h2 id="research-keywords">Keywords</h2>
+    <div class="research-keywords">
+      {{ range .Params.keywords }}<span>{{ . }}</span>{{ end }}
+    </div>
+  </section>
+
+  <section class="research-detail-section" aria-labelledby="selected-publications">
+    <h2 id="selected-publications">Selected Publications</h2>
+    <div class="research-reference-list">
+      {{ range .Params.references }}
+        {{ with site.GetPage . }}
+          <div class="research-reference">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <span>{{ .Date.Format "2006" }}</span>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+</article>
+{{ end }}

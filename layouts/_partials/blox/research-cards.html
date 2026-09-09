@@ -1,0 +1,24 @@
+{{ $block := .wcBlock }}
+{{ $research_section := site.GetPage "/research" }}
+
+<div class="research-overview">
+  <h1>{{ $block.content.title | markdownify | emojify }}</h1>
+
+  <div class="research-card-grid">
+    {{ range sort $research_section.RegularPages "Params.weight" "asc" }}
+      <a href="{{ .RelPermalink }}" class="research-card">
+        <div class="research-video-placeholder" aria-label="Video placeholder">
+          <span class="research-play-icon" aria-hidden="true">▶</span>
+          <span>Video coming soon</span>
+        </div>
+        <div class="research-card-body">
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Params.summary }}</p>
+          <div class="research-keywords">
+            {{ range .Params.keywords }}<span>{{ . }}</span>{{ end }}
+          </div>
+        </div>
+      </a>
+    {{ end }}
+  </div>
+</div>

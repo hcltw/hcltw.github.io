@@ -305,3 +305,214 @@
 .dark .publication-number {
   color: rgb(156 163 175);
 }
+
+/* Research overview and topic pages */
+.research-overview,
+.research-detail {
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.research-overview > h1,
+.research-detail > h1 {
+  margin: 0 0 2rem;
+  color: rgb(17 24 39);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: -0.025em;
+}
+
+.research-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.research-card {
+  overflow: hidden;
+  border: 1px solid rgb(229 231 235);
+  border-radius: 0.75rem;
+  background: white;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.research-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+}
+
+.research-video-placeholder,
+.research-detail-video {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  background: linear-gradient(135deg, rgb(var(--color-primary-100)), rgb(var(--color-primary-200)));
+  color: rgb(var(--color-primary-800));
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.research-play-icon {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  padding-left: 0.15rem;
+  border-radius: 9999px;
+  background: rgb(255 255 255 / 0.78);
+}
+
+.research-card-body {
+  padding: 1.4rem;
+}
+
+.research-card-body h2 {
+  margin: 0 0 0.45rem;
+  color: rgb(17 24 39);
+  font-size: 1.3rem;
+  font-weight: 650;
+}
+
+.research-card-body p {
+  margin: 0 0 1rem;
+  color: rgb(75 85 99);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.research-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.research-keywords span {
+  padding: 0.3rem 0.65rem;
+  border-radius: 9999px;
+  background: rgb(var(--color-primary-100));
+  color: rgb(var(--color-primary-800));
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.research-detail {
+  max-width: 52rem;
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+}
+
+.research-detail-video {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
+}
+
+.research-description {
+  color: rgb(55 65 81);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.research-description p + p {
+  margin-top: 1rem;
+}
+
+.research-detail-section {
+  margin-top: 2.5rem;
+}
+
+.research-detail-section h2 {
+  margin-bottom: 1rem;
+  color: rgb(17 24 39);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.research-reference-list {
+  border-top: 1px solid rgb(229 231 235);
+}
+
+.research-reference {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgb(229 231 235);
+}
+
+.research-reference a {
+  color: rgb(var(--color-primary-700));
+  font-weight: 600;
+}
+
+.research-reference span {
+  flex: none;
+  color: rgb(107 114 128);
+  font-size: 0.85rem;
+}
+
+.dark .research-overview > h1,
+.dark .research-detail > h1,
+.dark .research-card-body h2,
+.dark .research-detail-section h2 {
+  color: white;
+}
+
+.dark .research-card {
+  border-color: rgb(55 65 81);
+  background: rgb(31 41 55);
+}
+
+.dark .research-card-body p,
+.dark .research-description {
+  color: rgb(209 213 219);
+}
+
+.dark .research-video-placeholder,
+.dark .research-detail-video {
+  background: linear-gradient(135deg, rgb(var(--color-primary-900)), rgb(31 41 55));
+  color: rgb(var(--color-primary-200));
+}
+
+.dark .research-keywords span {
+  background: rgb(var(--color-primary-900));
+  color: rgb(var(--color-primary-200));
+}
+
+.dark .research-reference-list,
+.dark .research-reference {
+  border-color: rgb(55 65 81);
+}
+
+.dark .research-reference a {
+  color: rgb(var(--color-primary-300));
+}
+
+@media (min-width: 1024px) {
+  .research-overview > h1,
+  .research-detail > h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .research-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-reference {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+}
