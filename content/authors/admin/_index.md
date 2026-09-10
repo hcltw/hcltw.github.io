@@ -47,6 +47,7 @@ interests:
   - Recommender Systems
   - Social Network Analysis
   - Cross-domain Collaborations
+  - Interaction and Dynamics
 
 education:
   - area: PhD in Computer Science

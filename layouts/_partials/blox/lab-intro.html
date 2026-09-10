@@ -1,0 +1,9 @@
+{{ $block := .wcBlock }}
+
+<div class="research-overview lab-overview">
+  <h1>{{ $block.content.title | markdownify | emojify }}</h1>
+  <p class="lab-subtitle">{{ $block.content.subtitle | markdownify | emojify }}</p>
+  <div class="research-overview-text">
+    {{ $block.content.text | markdownify | emojify }}
+  </div>
+</div>

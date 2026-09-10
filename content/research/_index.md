@@ -15,5 +15,5 @@ sections:
     content:
       title: Research
       text: |-
-        My research focuses on modeling interpersonal dynamics, **including how people influence one another, navigate conflicting preferences, and make decisions together**. I develop methods using machine learning, graph representation learning, generative models, and reinforcement learning. Applications include, but are not limited to, online communities, group recommendation, team sports, healthcare, and dynamic markets.
+        My research focuses on mining and learning from interactions and dynamics, **including how people influence one another, navigate conflicting preferences, and make decisions together**. I develop methods using machine learning, graph representation learning, generative models, and reinforcement learning. Applications include, but are not limited to, online communities, group recommendation, team sports, healthcare, and dynamic markets.
 ---

@@ -271,6 +271,21 @@
   max-width: none;
 }
 
+.recruiting-students-section > .flex > .mb-6 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.recruiting-students-section > .flex > .mb-6::before {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: 0 0 auto;
+  background: currentColor;
+  content: "";
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8'%3E%3Cpath d='M7 7l10 10M17 7L7 17'/%3E%3Ccircle cx='6' cy='6' r='3'/%3E%3Ccircle cx='18' cy='6' r='3'/%3E%3Ccircle cx='6' cy='18' r='3'/%3E%3Ccircle cx='18' cy='18' r='3'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
 /* Full publications list */
 .publication-sections {
   width: 100%;
@@ -346,6 +361,14 @@
 
 .research-overview-text p {
   margin: 0;
+}
+
+.lab-subtitle {
+  margin: -1rem 0 1.25rem;
+  color: rgb(75 85 99);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.6;
 }
 
 .research-card-grid {
@@ -510,6 +533,7 @@
 
 .dark .research-card-body p,
 .dark .research-overview-text,
+.dark .lab-subtitle,
 .dark .research-description {
   color: rgb(209 213 219);
 }

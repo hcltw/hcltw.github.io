@@ -36,7 +36,7 @@ sections:
           parallax: false
   - block: markdown
     content:
-      title: '📚 Recruiting Students'
+      title: '[MILD Lab](/lab/) is Recruiting'
       subtitle: ''
       text: |-
         - **Position:** Master's Students

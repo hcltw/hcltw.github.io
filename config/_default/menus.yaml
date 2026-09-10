@@ -10,6 +10,9 @@ main:
   - name: Publications
     url: publication/
     weight: 12
+  - name: Lab
+    url: lab/
+    weight: 13
   - name: Research
     url: research/
     weight: 11
