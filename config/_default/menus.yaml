@@ -12,7 +12,7 @@ main:
     weight: 12
   - name: Lab
     url: lab/
-    weight: 13
+    weight: 40
   - name: Research
     url: research/
     weight: 11

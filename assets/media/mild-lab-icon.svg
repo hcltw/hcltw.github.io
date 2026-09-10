@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-labelledby="title">
+  <title id="title">MILD Lab interaction network</title>
+  <rect width="192" height="192" rx="38" fill="#365f4a"/>
+  <g fill="none" stroke="#e8efe9" stroke-width="12" stroke-linecap="round">
+    <path d="M57 57 135 135M135 57 57 135"/>
+  </g>
+  <g fill="#e8efe9" stroke="#365f4a" stroke-width="7">
+    <circle cx="51" cy="51" r="22"/>
+    <circle cx="141" cy="51" r="22"/>
+    <circle cx="51" cy="141" r="22"/>
+    <circle cx="141" cy="141" r="22"/>
+  </g>
+</svg>
