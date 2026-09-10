@@ -336,6 +336,18 @@
   letter-spacing: -0.025em;
 }
 
+.research-overview-text {
+  width: 100%;
+  margin: 0 0 2rem;
+  color: rgb(55 65 81);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.research-overview-text p {
+  margin: 0;
+}
+
 .research-card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -497,6 +509,7 @@
 }
 
 .dark .research-card-body p,
+.dark .research-overview-text,
 .dark .research-description {
   color: rgb(209 213 219);
 }

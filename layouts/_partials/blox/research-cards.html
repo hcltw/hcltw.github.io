@@ -4,6 +4,12 @@
 <div class="research-overview">
   <h1>{{ $block.content.title | markdownify | emojify }}</h1>
 
+  {{ with $block.content.text }}
+    <div class="research-overview-text">
+      {{ . | markdownify | emojify }}
+    </div>
+  {{ end }}
+
   <div class="research-card-grid">
     {{ range sort $research_section.RegularPages "Params.weight" "asc" }}
       {{ $research := . }}
