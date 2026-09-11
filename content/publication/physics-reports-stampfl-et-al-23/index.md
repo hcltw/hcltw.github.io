@@ -47,7 +47,4 @@ publication_types:
 - article-journal
 publication: '*Physics Reports*'
 doi: 10.1016/j.physrep.2022.11.003
-links:
-- name: URL
-  url: https://doi.org/10.1016/j.physrep.2022.11.003
 ---

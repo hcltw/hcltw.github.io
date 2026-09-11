@@ -11,7 +11,4 @@ publication_types:
 - paper-conference
 publication: '*2025 IEEE International Conference on Big Data (BigData)*'
 doi: 10.1109/BigData66926.2025.11402337
-links:
-- name: URL
-  url: https://doi.org/10.1109/BigData66926.2025.11402337
 ---

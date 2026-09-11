@@ -12,7 +12,4 @@ publication_types:
 - paper-conference
 publication: '*Ubi-Media / I-SPAN 2025*'
 doi: 10.1007/978-981-96-6291-3_2
-links:
-- name: URL
-  url: https://doi.org/10.1007/978-981-96-6291-3_2
 ---

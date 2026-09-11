@@ -13,7 +13,4 @@ publication_types:
 publication: '*2016 IEEE International Conference on Big Data (IEEE BigData 2016),
   Washington DC, USA, December 5-8, 2016*'
 doi: 10.1109/BIGDATA.2016.7841012
-links:
-- name: URL
-  url: https://doi.org/10.1109/BigData.2016.7841012
 ---

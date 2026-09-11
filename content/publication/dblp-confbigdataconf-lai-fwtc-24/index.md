@@ -14,7 +14,4 @@ publication_types:
 publication: '*IEEE International Conference on Big Data, BigData 2024, Washington,
   DC, USA, December 15-18, 2024*'
 doi: 10.1109/BIGDATA62323.2024.10826016
-links:
-- name: URL
-  url: https://doi.org/10.1109/BigData62323.2024.10826016
 ---

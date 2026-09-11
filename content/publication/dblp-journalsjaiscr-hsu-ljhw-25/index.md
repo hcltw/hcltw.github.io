@@ -13,7 +13,4 @@ publication_types:
 - article-journal
 publication: '*J. Artif. Intell. Soft Comput. Res.*'
 doi: 10.2478/JAISCR-2025-0016
-links:
-- name: URL
-  url: https://doi.org/10.2478/jaiscr-2025-0016
 ---

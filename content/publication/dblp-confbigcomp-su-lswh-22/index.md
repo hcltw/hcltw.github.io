@@ -14,7 +14,4 @@ publication_types:
 publication: '*IEEE International Conference on Big Data and Smart Computing, BigComp
   2022, Daegu, Korea, Republic of, January 17-20, 2022*'
 doi: 10.1109/BIGCOMP54360.2022.00023
-links:
-- name: URL
-  url: https://doi.org/10.1109/BigComp54360.2022.00023
 ---

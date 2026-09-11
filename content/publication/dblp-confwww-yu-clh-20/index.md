@@ -12,7 +12,4 @@ publication_types:
 publication: '*Companion of The 2020 Web Conference 2020, Taipei, Taiwan, April 20-24,
   2020*'
 doi: 10.1145/3366424.3382679
-links:
-- name: URL
-  url: https://doi.org/10.1145/3366424.3382679
 ---

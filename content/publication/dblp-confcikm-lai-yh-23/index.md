@@ -13,7 +13,4 @@ publication: '*Proceedings of the 32nd ACM International Conference on Informati
   and Knowledge Management, CIKM 2023, Birmingham, United Kingdom, October 21-25,
   2023*'
 doi: 10.1145/3583780.3614952
-links:
-- name: URL
-  url: https://doi.org/10.1145/3583780.3614952
 ---

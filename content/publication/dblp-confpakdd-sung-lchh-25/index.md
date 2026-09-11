@@ -14,7 +14,4 @@ publication: '*Data Science: Foundations and Applications - 29th Pacific-Asia Co
   on Knowledge Discovery and Data Mining, PAKDD 2025, Sydney, Australia, June 10-13,
   2025, Proceedings, Part VII*'
 doi: 10.1007/978-981-96-8298-0_11
-links:
-- name: URL
-  url: https://doi.org/10.1007/978-981-96-8298-0_11
 ---

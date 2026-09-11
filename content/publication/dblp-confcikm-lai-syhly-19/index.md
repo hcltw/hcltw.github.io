@@ -15,7 +15,4 @@ publication_types:
 publication: '*Proceedings of the 28th ACM International Conference on Information
   and Knowledge Management, CIKM 2019, Beijing, China, November 3-7, 2019*'
 doi: 10.1145/3357384.3357952
-links:
-- name: URL
-  url: https://doi.org/10.1145/3357384.3357952
 ---

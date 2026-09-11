@@ -10,7 +10,4 @@ publication_types:
 - paper-conference
 publication: '*APNOMS 2021*'
 doi: 10.23919/APNOMS52696.2021.9562640
-links:
-- name: URL
-  url: https://doi.org/10.23919/APNOMS52696.2021.9562640
 ---

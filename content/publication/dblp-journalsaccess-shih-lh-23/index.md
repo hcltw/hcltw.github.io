@@ -11,7 +11,4 @@ publication_types:
 - article-journal
 publication: '*IEEE Access*'
 doi: 10.1109/ACCESS.2023.3332029
-links:
-- name: URL
-  url: https://doi.org/10.1109/ACCESS.2023.3332029
 ---

@@ -15,7 +15,4 @@ publication_types:
 publication: '*IEEE International Conference on Big Data and Smart Computing, BigComp
   2024, Bangkok, Thailand, February 18-21, 2024*'
 doi: 10.1109/BIGCOMP60711.2024.00016
-links:
-- name: URL
-  url: https://doi.org/10.1109/BigComp60711.2024.00016
 ---

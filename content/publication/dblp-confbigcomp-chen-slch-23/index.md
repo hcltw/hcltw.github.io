@@ -13,7 +13,4 @@ publication_types:
 publication: '*IEEE International Conference on Big Data and Smart Computing, BigComp
   2023, Jeju, Republic of Korea, February 13-16, 2023*'
 doi: 10.1109/BIGCOMP57234.2023.00015
-links:
-- name: URL
-  url: https://doi.org/10.1109/BigComp57234.2023.00015
 ---

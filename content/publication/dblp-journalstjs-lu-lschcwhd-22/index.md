@@ -16,7 +16,4 @@ publication_types:
 - article-journal
 publication: '*J. Supercomput.*'
 doi: 10.1007/S11227-021-04013-X
-links:
-- name: URL
-  url: https://doi.org/10.1007/s11227-021-04013-x
 ---

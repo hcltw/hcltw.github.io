@@ -16,8 +16,6 @@ publication: "*CIKM '20: The 29th ACM International Conference on Information an
   Knowledge Management, Virtual Event, Ireland, October 19-23, 2020*"
 doi: 10.1145/3340531.3411925
 links:
-- name: URL
-  url: https://doi.org/10.1145/3340531.3411925
 - name: arXiv
   url: https://arxiv.org/abs/2110.06117
 ---
