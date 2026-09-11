@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Hsu-Chao Lai (賴旭昭)
+title: Hsu-Chao Lai 賴旭昭
 
 # Name pronunciation (optional)
 name_pronunciation: ''
@@ -27,7 +27,9 @@ role: Assistant Professor
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Department of Artificial Intelligence, Chang Gung University
+  - name: |-
+      Department of Artificial Intelligence
+      Chang Gung University
     url: https://www.cgu.edu.tw/ai-en/
 
 # Social network links
@@ -42,10 +44,10 @@ profiles:
     url: https://orcid.org/0009-0002-9690-8461
 
 interests:
+  - Interaction and Dynamics
   - Recommender Systems
   - Social Network Analysis
   - Cross-domain Collaborations
-  - Interaction and Dynamics
 
 education:
   - area: PhD in Computer Science

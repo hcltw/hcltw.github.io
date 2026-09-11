@@ -6,6 +6,12 @@
   background-color: #e4e9e5;
 }
 
+/* Preserve the intentional department/university line break in the profile. */
+.portrait-title > .mb-2 > a > div,
+.portrait-title > .mb-2 > div {
+  white-space: pre-line;
+}
+
 /* Match top-level landing-page headings to the Publications page title. */
 .blox-markdown.consistent-page-heading .text-3xl,
 .blox-resume-experience.consistent-page-heading .w-full:first-child > h3:first-child {
