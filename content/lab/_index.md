@@ -1,6 +1,6 @@
 ---
 title: LaMI Lab
-summary: Mining and Learning from Interactions and Dynamics
+summary: Learning and Mining from Interactions and Dynamics
 type: landing
 
 sections:
