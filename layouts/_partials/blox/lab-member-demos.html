@@ -14,7 +14,7 @@
     (dict "name" "Future Member 3" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U3" "avatar" "")
     (dict "name" "Future Member 4" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U4" "avatar" "")))
   (dict "title" "Alumni" "members" (slice
-    (dict "name" "Hsin-Tung Tsao" "role" "Primary advisor:" "co_supervisor" "Jiun-Long Huang" "co_supervisor_url" "https://people.cs.nycu.edu.tw/~jlhuang/" "topics" (slice "Sports Analysis" "Tactical Analysis") "initials" "HT" "avatar" "")))
+    (dict "name" "Hsin-Tung Tsao" "role" "Primary advisor:" "co_supervisor" "Jiun-Long Huang" "co_supervisor_url" "https://www.cs.nycu.edu.tw/members/detail/jlhuang" "topics" (slice "Sports Analysis" "Tactical Analysis") "initials" "HT" "avatar" "/uploads/members/hsin-tung-tsao.jpg")))
 }}
 
 <section class="lab-people">
@@ -28,7 +28,7 @@
       <div class="lab-people-grid">
         {{ range .members }}
           {{ $member := . }}
-          <article class="lab-member-card{{ if .pi }} lab-pi-card{{ else }} lab-member-placeholder-card{{ end }}">
+          <article class="lab-member-card{{ if .pi }} lab-pi-card{{ else if not .avatar }} lab-member-placeholder-card{{ end }}">
             {{ if .avatar }}
               <img src="{{ .avatar }}" alt="{{ .name }}">
             {{ else }}
