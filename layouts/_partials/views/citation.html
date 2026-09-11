@@ -1,6 +1,12 @@
 {{ $item := .item }}
 {{ $publication_url := $item.RelPermalink }}
-{{ with $item.Params.doi }}
+{{ $publicationDOI := $item.Params.doi | default "" }}
+{{ with $item.Params.hugoblox }}
+  {{ with .ids }}
+    {{ with .doi }}{{ $publicationDOI = . }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ with $publicationDOI }}
   {{ $publication_url = printf "https://doi.org/%s" . }}
 {{ else }}
   {{ with $item.Params.links }}
@@ -36,7 +42,7 @@
   {{ end }}
 
   {{ $doiURL := "" }}
-  {{ with $item.Params.doi }}{{ $doiURL = printf "https://doi.org/%s" . }}{{ end }}
+  {{ with $publicationDOI }}{{ $doiURL = printf "https://doi.org/%s" . }}{{ end }}
   {{ $pdfURL := $item.Params.url_pdf | default "" }}
   {{ $arxivURL := "" }}
   {{ range $item.Params.links }}
@@ -44,6 +50,11 @@
     {{ $type := lower (.type | default "") }}
     {{ if or (eq $name "pdf") (eq $type "pdf") }}{{ $pdfURL = .url }}{{ end }}
     {{ if eq $name "arxiv" }}{{ $arxivURL = .url }}{{ end }}
+  {{ end }}
+  {{ with $item.Params.hugoblox }}
+    {{ with .ids }}
+      {{ with .arxiv }}{{ $arxivURL = printf "https://arxiv.org/abs/%s" . }}{{ end }}
+    {{ end }}
   {{ end }}
   {{ $citeFilename := "" }}
   {{ with $item.Resources.GetMatch "cite.bib" }}{{ $citeFilename = printf "%scite.bib" $item.RelPermalink }}{{ end }}
