@@ -11,7 +11,7 @@
 
   <div class="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
     {{ range sort $course_section.RegularPages "Params.weight" "asc" }}
-      <a href="{{ .RelPermalink }}" class="group block w-full p-6 bg-white border border-gray-200 rounded-lg shadow transition hover:-translate-y-0.5 hover:shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <a href="{{ .RelPermalink }}" class="course-card group flex flex-col w-full p-6 bg-white border border-gray-200 rounded-lg shadow transition hover:-translate-y-0.5 hover:shadow-md dark:bg-gray-800 dark:border-gray-700">
         {{ with index .Params.tags 0 }}
           <span class="course-level-tag course-level-{{ . | urlize }}">{{ . }}</span>
         {{ end }}
@@ -21,6 +21,7 @@
         <div class="text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
           {{ delimit .Params.semesters " / " }}
         </div>
+        <span class="card-more">See more <span aria-hidden="true">→</span></span>
       </a>
     {{ end }}
   </div>

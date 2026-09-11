@@ -519,6 +519,8 @@
 }
 
 .research-card {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   border: 1px solid rgb(229 231 235);
   border-radius: 0.75rem;
@@ -571,6 +573,9 @@
 }
 
 .research-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: 1.4rem;
 }
 
@@ -601,6 +606,34 @@
   color: rgb(var(--color-primary-800));
   font-size: 0.75rem;
   font-weight: 600;
+}
+
+.card-more {
+  align-self: flex-end;
+  margin-top: auto;
+  padding-top: 1rem;
+  color: rgb(var(--color-primary-600));
+  font-size: 0.82rem;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+.course-card:hover .card-more,
+.course-card:focus-visible .card-more,
+.research-card:hover .card-more,
+.research-card:focus-visible .card-more {
+  color: rgb(var(--color-primary-700));
+}
+
+.dark .card-more {
+  color: rgb(var(--color-primary-400));
+}
+
+.dark .course-card:hover .card-more,
+.dark .course-card:focus-visible .card-more,
+.dark .research-card:hover .card-more,
+.dark .research-card:focus-visible .card-more {
+  color: rgb(var(--color-primary-300));
 }
 
 .research-detail {
