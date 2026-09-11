@@ -14,4 +14,7 @@ publication_types:
 publication: '*Proc. VLDB Endow.*'
 doi: 10.14778/3389133.3389143
 url_pdf: http://www.vldb.org/pvldb/vol13/p1275-ko.pdf
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2002.04338
 ---

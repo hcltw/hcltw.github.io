@@ -3,6 +3,9 @@
 <div class="max-w-prose mx-auto flex justify-center">
   <article class="prose prose-slate lg:prose-xl dark:prose-invert">
     <h1 class="lg:text-6xl">{{ .Title }}</h1>
+    {{ with .Params.last_updated }}
+      <p class="publication-last-updated">Last updated: {{ . }}</p>
+    {{ end }}
     {{ .Content }}
   </article>
 </div>

@@ -14,4 +14,6 @@ doi: 10.24963/ijcai.2025/1042
 links:
 - name: URL
   url: https://doi.org/10.24963/ijcai.2025/1042
+- name: arXiv
+  url: https://arxiv.org/abs/2505.00278
 ---

@@ -287,6 +287,17 @@
 }
 
 /* Full publications list */
+.publication-last-updated {
+  margin: -1.25rem 0 0;
+  color: rgb(107 114 128);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.dark .publication-last-updated {
+  color: rgb(156 163 175);
+}
+
 .publication-sections {
   width: 100%;
   max-width: 48rem;

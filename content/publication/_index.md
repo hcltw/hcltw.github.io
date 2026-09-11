@@ -1,6 +1,7 @@
 ---
 title: Publications
 cms_exclude: true
+last_updated: 'September 11, 2026'
 
 # View.
 view: citation
