@@ -14,7 +14,7 @@
     (dict "name" "Future Member 3" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U3" "avatar" "")
     (dict "name" "Future Member 4" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U4" "avatar" "")))
   (dict "title" "Alumni" "members" (slice
-    (dict "name" "Hsin-Tung Tsao" "role" "Co-supervised with" "co_supervisor" "Jiun-Long Huang" "co_supervisor_url" "https://people.cs.nycu.edu.tw/~jlhuang/" "topic" "Sports Analysis · Tactical Analysis" "initials" "HT" "avatar" "")))
+    (dict "name" "Hsin-Tung Tsao" "role" "Primary advisor:" "co_supervisor" "Jiun-Long Huang" "co_supervisor_url" "https://people.cs.nycu.edu.tw/~jlhuang/" "topics" (slice "Sports Analysis" "Tactical Analysis") "initials" "HT" "avatar" "")))
 }}
 
 <section class="lab-people">
@@ -49,7 +49,11 @@
                 <div><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg><a href="{{ .website }}">{{ .website }}</a></div>
               </div>
             {{ else }}
-              <span>{{ .topic }}</span>
+              {{ with .topics }}
+                {{ range . }}<span>{{ . }}</span>{{ end }}
+              {{ else }}
+                <span>{{ .topic }}</span>
+              {{ end }}
             {{ end }}
           </article>
         {{ end }}
