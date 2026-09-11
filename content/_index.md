@@ -47,15 +47,33 @@ sections:
     design:
       columns: '1'
       css_class: recruiting-students-section
-  - block: collection
-    id: papers
+  - block: career-timelines
     content:
-      title: Recent Publications
-      text: ""
-      filters:
-        folders:
-          - publication
-        exclude_featured: false
+      username: admin
+      experience_title: Experience
+      talks_title: Invited Talks & Outreach
+      talks:
+        - title: What Is Machine Learning? Build Your Own Game Controller with AI
+          venue: Tatung High School
+          date: 2026-07-01
+          type: Outreach
+        - title: 'Recommender Systems: From Social Apps to Healthcare'
+          venue: Kanazawa University
+          date: 2026-06-01
+          type: Seminar
+        - title: 'Recommender Systems: From Social Apps to Healthcare'
+          venue: Department of Information Management, National Taiwan University of Science and Technology
+          date: 2026-05-01
+          type: Seminar
+        - title: 'Recommender Systems: From Social Apps to Healthcare'
+          venue: Computer Science Seminar, National Yang Ming Chiao Tung University
+          date: 2026-03-01
+          type: Seminar
+        - title: Hands-on Introduction to AI
+          venue: Department of Nursing, National Sun Yat-sen University
+          date: 2025-11-01
+          type: Workshop
     design:
-      view: citation
+      spacing:
+        padding: ['4rem', '0', '5rem', '0']
 ---
