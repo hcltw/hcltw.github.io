@@ -1,0 +1,50 @@
+{{ $piPage := site.GetPage "/authors/admin" }}
+{{ $avatar := $piPage.Resources.GetMatch "avatar*" }}
+{{ $avatarURL := "" }}
+{{ with $avatar }}{{ $avatarURL = (.Fill "320x320 Center").RelPermalink }}{{ end }}
+
+{{ $groups := slice
+  (dict "title" "Principal Investigator" "members" (slice
+    (dict "name" "Hsu-Chao Lai" "role" "Assistant Professor" "affiliation" "Department of Artificial Intelligence, Chang Gung University" "email" "hsuchaolai@cgu.edu.tw" "website" "https://hcltw.github.io" "initials" "HL" "avatar" $avatarURL "pi" true)))
+  (dict "title" "Master Students" "members" (slice
+    (dict "name" "Future Member" "role" "Contact" "topic" "Research Topic" "initials" "MS" "avatar" "")))
+  (dict "title" "Undergraduate Students" "members" (slice
+    (dict "name" "Future Member 1" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U1" "avatar" "")
+    (dict "name" "Future Member 2" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U2" "avatar" "")
+    (dict "name" "Future Member 3" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U3" "avatar" "")
+    (dict "name" "Future Member 4" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U4" "avatar" "")))
+}}
+
+<section class="lab-people">
+  <div class="lab-people-heading">
+    <h2>People</h2>
+  </div>
+
+  {{ range $groups }}
+    <section class="lab-people-group" aria-labelledby="lab-group-{{ anchorize .title }}">
+      <h3 id="lab-group-{{ anchorize .title }}">{{ .title }}</h3>
+      <div class="lab-people-grid">
+        {{ range .members }}
+          <article class="lab-member-card{{ if .pi }} lab-pi-card{{ else }} lab-member-placeholder-card{{ end }}">
+            {{ if .avatar }}
+              <img src="{{ .avatar }}" alt="{{ .name }}">
+            {{ else }}
+              <div class="lab-avatar-placeholder" aria-hidden="true">{{ .initials }}</div>
+            {{ end }}
+            <h4>{{ .name }}</h4>
+            <p>{{ .role }}</p>
+            {{ if .pi }}
+              <div class="lab-pi-info">
+                <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.2 7-12a7 7 0 10-14 0c0 6.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.25"/></svg><span>{{ .affiliation }}</span></div>
+                <div><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg><a href="mailto:{{ .email }}">{{ .email }}</a></div>
+                <div><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg><a href="{{ .website }}">{{ .website }}</a></div>
+              </div>
+            {{ else }}
+              <span>{{ .topic }}</span>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+</section>

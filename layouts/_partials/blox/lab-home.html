@@ -1,0 +1,28 @@
+{{ $hero := resources.Get "media/mild-lab-culture.svg" }}
+<section class="lab-hero">
+  {{ with $hero }}<img src="{{ .RelPermalink }}" alt="Abstract connected nodes representing the culture of MILD Lab">{{ end }}
+  <div class="lab-hero-overlay"></div>
+  <div class="lab-hero-content">
+    <p>CHANG GUNG UNIVERSITY</p>
+    <h1>MILD Lab</h1>
+    <h2>Mining and Learning from Interactions and Dynamics</h2>
+    <a href="#about-mild">Discover MILD <span aria-hidden="true">↓</span></a>
+  </div>
+</section>
+
+<section id="about-mild" class="lab-about-research">
+  <div class="lab-about-copy">
+    <p class="lab-section-eyebrow">ABOUT US</p>
+    <h2>Learning from how people and systems interact</h2>
+    <p>MILD Lab studies interactions, influence, and collective decision-making across online platforms, healthcare, sports, and dynamic markets.</p>
+  </div>
+  <div class="lab-direction-list" aria-label="Research directions">
+    <a href="/research/group-recommendation/">Group Recommendation</a>
+    <a href="/research/social-influence-networks/">Social Influence Networks</a>
+    <a href="/research/team-sports-intelligence/">Team Sports Intelligence</a>
+    <a href="/research/intelligent-decision-support/">Intelligent Decision Support</a>
+    <a href="/research/learning-in-dynamic-markets/">Learning in Dynamic Markets</a>
+  </div>
+</section>
+
+{{ partial "blox/lab-member-demos.html" . }}
