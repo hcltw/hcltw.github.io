@@ -32,7 +32,7 @@ sections:
           parallax: false
   - block: markdown
     content:
-      title: '[MILD Lab](/lab/) is Recruiting'
+      title: '[MALID Lab](/lab/) is Recruiting'
       subtitle: ''
       text: |-
         - **Position:** Master's Students

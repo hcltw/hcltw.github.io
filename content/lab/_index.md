@@ -1,5 +1,5 @@
 ---
-title: MILD Lab
+title: MALID Lab
 summary: Mining and Learning from Interactions and Dynamics
 type: landing
 
