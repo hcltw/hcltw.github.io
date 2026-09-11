@@ -69,10 +69,6 @@ sections:
           venue: Computer Science Seminar, National Yang Ming Chiao Tung University
           date: 2026-03-01
           type: Seminar
-        - title: Hands-on Introduction to AI
-          venue: Department of Nursing, National Sun Yat-sen University
-          date: 2025-11-01
-          type: Workshop
     design:
       spacing:
         padding: ['4rem', '0', '5rem', '0']
