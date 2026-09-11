@@ -1,5 +1,4 @@
 {{ $item := .item }}
-{{ $has_attachments := partial "functions/has_attachments" $item }}
 {{ $publication_url := $item.RelPermalink }}
 {{ with $item.Params.doi }}
   {{ $publication_url = printf "https://doi.org/%s" . }}
@@ -36,9 +35,22 @@
     {{- $item.Date.Format "2006" -}}.
   {{ end }}
 
-  {{ if $has_attachments }}
-    <div class="flex flex-wrap space-x-3">
-      {{ partial "page_links" (dict "page" $item "is_list" 1) }}
-    </div>
+  {{ $doiURL := "" }}
+  {{ with $item.Params.doi }}{{ $doiURL = printf "https://doi.org/%s" . }}{{ end }}
+  {{ $pdfURL := $item.Params.url_pdf | default "" }}
+  {{ $arxivURL := "" }}
+  {{ range $item.Params.links }}
+    {{ $name := lower (.name | default "") }}
+    {{ $type := lower (.type | default "") }}
+    {{ if or (eq $name "pdf") (eq $type "pdf") }}{{ $pdfURL = .url }}{{ end }}
+    {{ if eq $name "arxiv" }}{{ $arxivURL = .url }}{{ end }}
   {{ end }}
+  {{ $citeFilename := "" }}
+  {{ with $item.Resources.GetMatch "cite.bib" }}{{ $citeFilename = printf "%scite.bib" $item.RelPermalink }}{{ end }}
+  <div class="publication-action-row">
+    {{ partial "publication/action_link" (dict "label" "DOI" "icon" "link" "url" $doiURL) }}
+    {{ partial "publication/action_link" (dict "label" "Cite" "icon" "cite" "filename" $citeFilename) }}
+    {{ partial "publication/action_link" (dict "label" "PDF" "icon" "pdf" "url" $pdfURL) }}
+    {{ partial "publication/action_link" (dict "label" "arXiv" "icon" "link" "url" $arxivURL) }}
+  </div>
 </div>
