@@ -483,7 +483,7 @@
 .lab-people-heading h2 { margin: 0; font-size: 2rem; font-weight: 700; }
 .lab-people-group + .lab-people-group { margin-top: 3.5rem; }
 .lab-people-group > h3 { margin: 0 0 1.25rem; text-align: center; font-size: 1.45rem; font-weight: 700; }
-.lab-people-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 14rem)); justify-content: center; gap: 1.25rem; }
+.lab-people-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 17rem)); justify-content: center; gap: 1.25rem; }
 .lab-people-grid:has(.lab-pi-card:only-child) { grid-template-columns: minmax(0, 31rem); }
 .lab-member-card { padding: 1.6rem 1rem; border: 1px solid #e5e7eb; border-radius: .75rem; background: #fff; box-shadow: 0 1px 3px rgb(0 0 0 / 7%); text-align: center; }
 .lab-pi-card { width: min(100%, 31rem); padding: 1.75rem; display: grid; grid-template-columns: 8rem minmax(0, 1fr); align-items: center; column-gap: 1.5rem; text-align: left; }
@@ -519,13 +519,13 @@
 
 @media (max-width: 767px) {
   .lab-about-research { grid-template-columns: 1fr; gap: 2rem; padding-top: 4rem; }
-  .lab-people-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .lab-people-grid:has(.lab-member-card:only-child) { grid-template-columns: minmax(0, 14rem); }
+  .lab-people-grid { grid-template-columns: repeat(2, minmax(0, 17rem)); }
+  .lab-people-grid:has(.lab-member-card:only-child) { grid-template-columns: minmax(0, min(17rem, 100%)); }
   .lab-people-grid:has(.lab-pi-card:only-child) { grid-template-columns: minmax(0, 31rem); }
 }
 
 @media (max-width: 480px) {
-  .lab-people-grid { grid-template-columns: minmax(0, 14rem); }
+  .lab-people-grid { grid-template-columns: minmax(0, min(17rem, 100%)); }
   .lab-people-grid:has(.lab-pi-card:only-child) { grid-template-columns: minmax(0, 20rem); }
   .lab-pi-card { grid-template-columns: 1fr; justify-items: center; text-align: center; }
   .lab-member-card.lab-pi-card img { grid-row: auto; width: 7rem; height: 7rem; margin: 0 auto 1rem; }
