@@ -14,7 +14,7 @@
     (dict "name" "Future Member 3" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U3" "avatar" "")
     (dict "name" "Future Member 4" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U4" "avatar" "")))
   (dict "title" "Alumni" "members" (slice
-    (dict "name" "Future Member" "role" "Contact" "topic" "Research Topic" "initials" "AL" "avatar" "")))
+    (dict "name" "Hsin-Tung Tsao" "role" "Co-supervised with" "co_supervisor" "Jiun-Long Huang" "co_supervisor_url" "https://people.cs.nycu.edu.tw/~jlhuang/" "topic" "Sports Analysis · Tactical Analysis" "initials" "HT" "avatar" "")))
 }}
 
 <section class="lab-people">
@@ -27,6 +27,7 @@
       <h3 id="lab-group-{{ anchorize .title }}">{{ .title }}</h3>
       <div class="lab-people-grid">
         {{ range .members }}
+          {{ $member := . }}
           <article class="lab-member-card{{ if .pi }} lab-pi-card{{ else }} lab-member-placeholder-card{{ end }}">
             {{ if .avatar }}
               <img src="{{ .avatar }}" alt="{{ .name }}">
@@ -34,7 +35,12 @@
               <div class="lab-avatar-placeholder" aria-hidden="true">{{ .initials }}</div>
             {{ end }}
             <h4>{{ .name }}</h4>
-            <p>{{ .role }}</p>
+            <p>
+              {{ .role }}
+              {{ with .co_supervisor }}
+                <a class="lab-member-contact-link" href="{{ $member.co_supervisor_url }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>
+              {{ end }}
+            </p>
             {{ if .pi }}
               <div class="lab-pi-info">
                 <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M6 21V4h12v17M9 8h2m2 0h2m-6 4h2m2 0h2m-6 4h2m2 0h2"/></svg><span>{{ .affiliation }}</span></div>
