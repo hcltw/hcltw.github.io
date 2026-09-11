@@ -36,8 +36,6 @@ profiles:
   - icon: at-symbol
     url: 'mailto:hsuchaolai@cgu.edu.tw'
     label: E-mail Me
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/hsu-chao-lai-16b386aa/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=q4ou82sAAAAJ&hl=en
   - icon: academicons/orcid
