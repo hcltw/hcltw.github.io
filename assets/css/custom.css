@@ -508,8 +508,8 @@
   .lab-people-grid:has(.lab-pi-card:only-child) { grid-template-columns: minmax(0, 20rem); }
   .lab-pi-card { grid-template-columns: 1fr; justify-items: center; text-align: center; }
   .lab-member-card.lab-pi-card img { grid-row: auto; width: 7rem; height: 7rem; margin: 0 auto 1rem; }
-  .lab-pi-info { align-items: center; }
-  .lab-pi-info > div { justify-content: center; }
+  .lab-pi-info { width: fit-content; max-width: 100%; align-items: stretch; text-align: left; }
+  .lab-pi-info > div { width: 100%; }
 }
 
 .research-card-grid {
