@@ -4,7 +4,7 @@
 <div class="mx-auto grid w-full max-w-7xl grid-cols-1 gap-14 px-6 lg:grid-cols-2 lg:gap-20 xl:gap-24 sm:px-0">
   <section class="w-full">
     <h3 class="mb-8 text-center text-3xl font-bold text-gray-900 dark:text-white">{{ $block.content.experience_title }}</h3>
-    <ol class="relative w-full border-s border-gray-200 dark:border-gray-700">
+    <ol class="relative mx-auto w-full max-w-lg border-s border-gray-200 dark:border-gray-700">
       {{ range $person_page.Params.work }}
         <li class="mb-8 ms-6">
           <span class="absolute flex h-6 w-6 items-center justify-center rounded-full bg-primary-100 -start-3 ring-8 ring-white dark:bg-primary-900 dark:ring-gray-900">
@@ -32,8 +32,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-12 0v1.5a6 6 0 0 0 6 6m0 0v3.75m-3 0h6M12 15.75a3 3 0 0 0 3-3V4.5a3 3 0 0 0-6 0v8.25a3 3 0 0 0 3 3Z" />
             </svg>
           </span>
-          <div class="mb-1 flex flex-wrap items-center gap-2">
-            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">{{ .title }}</h4>
+          <h4 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">{{ .title }}</h4>
+          <div class="mb-2">
             <span class="rounded bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ .type }}</span>
           </div>
           <span class="mb-2 block text-sm font-normal leading-snug text-gray-500 dark:text-gray-300">{{ .venue }}</span>
