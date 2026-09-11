@@ -1,5 +1,5 @@
 ---
-title: MALID Lab
+title: LaMI Lab
 summary: Mining and Learning from Interactions and Dynamics
 type: landing
 
