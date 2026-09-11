@@ -1,3 +1,11 @@
+/* Soften the global canvas in light mode while preserving all component colors. */
+:root:not(.dark) body,
+:root:not(.dark) .page-wrapper,
+:root:not(.dark) #page-bg,
+:root:not(.dark) .home-section-bg {
+  background-color: #e4e9e5;
+}
+
 /* Match top-level landing-page headings to the Publications page title. */
 .blox-markdown.consistent-page-heading .text-3xl,
 .blox-resume-experience.consistent-page-heading .w-full:first-child > h3:first-child {
