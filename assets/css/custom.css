@@ -12,6 +12,15 @@
   white-space: pre-line;
 }
 
+/* Keep the homepage timelines visible against the softened light canvas. */
+.blox-career-timelines ol {
+  border-color: #b9c3bc !important;
+}
+
+.dark .blox-career-timelines ol {
+  border-color: #374151 !important;
+}
+
 /* Match top-level landing-page headings to the Publications page title. */
 .blox-markdown.consistent-page-heading .text-3xl,
 .blox-resume-experience.consistent-page-heading .w-full:first-child > h3:first-child {
@@ -492,7 +501,8 @@
 .lab-member-card > span { display: inline-block; padding: .25rem .55rem; border-radius: 9999px; background: rgb(var(--color-primary-100)); color: rgb(var(--color-primary-800)); font-size: .7rem; font-weight: 600; }
 .lab-avatar-placeholder { display: grid; place-items: center; background: linear-gradient(135deg, rgb(var(--color-primary-100)), rgb(var(--color-primary-200))); color: rgb(var(--color-primary-800)); font-weight: 700; }
 .lab-member-placeholder-card { border-style: dashed; box-shadow: none; opacity: .72; }
-.dark .lab-member-card { border-color: #374151; background: #1f2937; }
+.dark .lab-member-card { border-color: #374151; background: #161e28; }
+.dark .lab-member-placeholder-card { opacity: 1; }
 .dark .lab-people-heading h2, .dark .lab-people-group > h3, .dark .lab-member-card h4 { color: #fff; }
 .dark .lab-member-card p, .dark .lab-pi-info > div { color: #9ca3af; }
 .dark .lab-pi-info a { color: rgb(var(--color-primary-400)); }
