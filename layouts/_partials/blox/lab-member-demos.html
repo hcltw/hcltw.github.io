@@ -7,12 +7,12 @@
   (dict "title" "Principal Investigator" "members" (slice
     (dict "name" "Hsu-Chao Lai · 賴旭昭" "role" "Assistant Professor" "affiliation" "Department of Artificial Intelligence" "location" "Taoyuan, Taiwan" "email" "hsuchaolai@cgu.edu.tw" "website" "https://hcltw.github.io" "initials" "HL" "avatar" $avatarURL "pi" true)))
   (dict "title" "Master Students" "members" (slice
-    (dict "name" "Future Member" "academic_info" "Dept. of AI, CGU" "role" "Contact" "topic" "Research Topic" "initials" "MS" "avatar" "")))
+    (dict "name" "Future Member" "academic_info" "Dept. of AI, CGU" "role" "Contact" "topic" "Research Topic" "initials" "MS" "avatar" "" "placeholder" true)))
   (dict "title" "Undergraduate Students" "members" (slice
-    (dict "name" "Future Member 1" "academic_info" "Dept. of AI, CGU" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U1" "avatar" "")
-    (dict "name" "Future Member 2" "academic_info" "Dept. of AI, CGU" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U2" "avatar" "")
-    (dict "name" "Future Member 3" "academic_info" "Dept. of AI, CGU" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U3" "avatar" "")
-    (dict "name" "Future Member 4" "academic_info" "Dept. of AI, CGU" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U4" "avatar" "")))
+    (dict "name" "Jui-Tse Chiang" "academic_info" "Dept. of AI, CGU" "github" "https://github.com/ray930912" "topic" "Capstone Student" "initials" "JC" "avatar" "/uploads/members/jui-tse-chiang.jpg" "capstone" true)
+    (dict "name" "Ruei-Syuan Tsai" "academic_info" "Dept. of AI, CGU" "github" "https://github.com/qm-owo" "topic" "Capstone Student" "initials" "RT" "avatar" "/uploads/members/ruei-syuan-tsai.jpg" "avatar_class" "lab-avatar-tsai" "capstone" true)
+    (dict "name" "Pin-Han Wang" "academic_info" "Dept. of AI, CGU" "github" "https://github.com/Alisa-owo" "topic" "Capstone Student" "initials" "PW" "avatar" "/uploads/members/pin-han-wang.jpg" "avatar_frame" "lab-avatar-frame-wang" "capstone" true)
+    (dict "name" "Jia-Hao Xu" "academic_info" "Dept. of AI, CGU" "contact_note" "No Link, Still Cool" "topic" "Capstone Student" "initials" "JX" "avatar" "/uploads/members/jia-hao-xu.jpg" "capstone" true)))
   (dict "title" "Alumni" "members" (slice
     (dict "name" "Hsin-Tung Tsao" "academic_info" "IAII, NYCU — M.S. 2026" "role" "Primary advisor:" "co_supervisor" "Jiun-Long Huang" "co_supervisor_url" "https://www.cs.nycu.edu.tw/members/detail/jlhuang" "topics" (slice "Sports Analysis" "Tactical Analysis") "initials" "HT" "avatar" "/uploads/members/hsin-tung-tsao.jpg")))
 }}
@@ -28,20 +28,42 @@
       <div class="lab-people-grid">
         {{ range .members }}
           {{ $member := . }}
-          <article class="lab-member-card{{ if .pi }} lab-pi-card{{ else if not .avatar }} lab-member-placeholder-card{{ end }}">
+          <article class="lab-member-card{{ if .pi }} lab-pi-card{{ else if .placeholder }} lab-member-placeholder-card{{ else if .capstone }} lab-capstone-card{{ end }}">
             {{ if .avatar }}
-              <img src="{{ .avatar }}" alt="{{ .name }}">
+              {{ if .avatar_frame }}
+                <div class="lab-member-avatar {{ .avatar_frame }}">
+                  <img{{ with .avatar_class }} class="{{ . }}"{{ end }} src="{{ .avatar }}" alt="{{ .name }}">
+                </div>
+              {{ else }}
+                <img{{ with .avatar_class }} class="{{ . }}"{{ end }} src="{{ .avatar }}" alt="{{ .name }}">
+              {{ end }}
             {{ else }}
               <div class="lab-avatar-placeholder" aria-hidden="true">{{ .initials }}</div>
             {{ end }}
             <h4>{{ .name }}</h4>
             {{ with .academic_info }}<p class="lab-member-academic-info">{{ . }}</p>{{ end }}
-            <p>
-              {{ .role }}
-              {{ with .co_supervisor }}
-                <a class="lab-member-contact-link" href="{{ $member.co_supervisor_url }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>
+            {{ with .github }}
+              <p class="lab-member-github">
+                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $member.name }} on GitHub">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.58 9.58 0 0112 6.82c.85 0 1.71.11 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.77c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+                </a>
+              </p>
+            {{ else }}
+              {{ if .contact_note }}
+                <p class="lab-member-contact-note">{{ .contact_note }}</p>
+              {{ else if .capstone }}
+                <div class="lab-member-github-spacer" aria-hidden="true"></div>
+              {{ else }}
+                {{ with .role }}
+                  <p>
+                    {{ . }}
+                    {{ with $member.co_supervisor }}
+                      <a class="lab-member-contact-link" href="{{ $member.co_supervisor_url }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>
+                    {{ end }}
+                  </p>
+                {{ end }}
               {{ end }}
-            </p>
+            {{ end }}
             {{ if .pi }}
               <div class="lab-pi-info">
                 <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M6 21V4h12v17M9 8h2m2 0h2m-6 4h2m2 0h2m-6 4h2m2 0h2"/></svg><span>{{ .affiliation }}</span></div>
