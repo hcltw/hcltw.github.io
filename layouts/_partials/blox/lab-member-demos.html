@@ -5,16 +5,16 @@
 
 {{ $groups := slice
   (dict "title" "Principal Investigator" "members" (slice
-    (dict "name" "Hsu-Chao Lai 賴旭昭" "role" "Assistant Professor" "affiliation" "Department of Artificial Intelligence" "location" "Taoyuan, Taiwan" "email" "hsuchaolai@cgu.edu.tw" "website" "https://hcltw.github.io" "initials" "HL" "avatar" $avatarURL "pi" true)))
+    (dict "name" "Hsu-Chao Lai · 賴旭昭" "role" "Assistant Professor" "affiliation" "Department of Artificial Intelligence" "location" "Taoyuan, Taiwan" "email" "hsuchaolai@cgu.edu.tw" "website" "https://hcltw.github.io" "initials" "HL" "avatar" $avatarURL "pi" true)))
   (dict "title" "Master Students" "members" (slice
-    (dict "name" "Future Member" "role" "Contact" "topic" "Research Topic" "initials" "MS" "avatar" "")))
+    (dict "name" "Future Member" "academic_info" "Dept. of AI, CGU" "role" "Contact" "topic" "Research Topic" "initials" "MS" "avatar" "")))
   (dict "title" "Undergraduate Students" "members" (slice
-    (dict "name" "Future Member 1" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U1" "avatar" "")
-    (dict "name" "Future Member 2" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U2" "avatar" "")
-    (dict "name" "Future Member 3" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U3" "avatar" "")
-    (dict "name" "Future Member 4" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U4" "avatar" "")))
+    (dict "name" "Future Member 1" "academic_info" "Dept. of AI, CGU" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U1" "avatar" "")
+    (dict "name" "Future Member 2" "academic_info" "Dept. of AI, CGU" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U2" "avatar" "")
+    (dict "name" "Future Member 3" "academic_info" "Dept. of AI, CGU" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U3" "avatar" "")
+    (dict "name" "Future Member 4" "academic_info" "Dept. of AI, CGU" "role" "Undergraduate Student" "topic" "Research Topic" "initials" "U4" "avatar" "")))
   (dict "title" "Alumni" "members" (slice
-    (dict "name" "Hsin-Tung Tsao" "role" "Primary advisor:" "co_supervisor" "Jiun-Long Huang" "co_supervisor_url" "https://www.cs.nycu.edu.tw/members/detail/jlhuang" "topics" (slice "Sports Analysis" "Tactical Analysis") "initials" "HT" "avatar" "/uploads/members/hsin-tung-tsao.jpg")))
+    (dict "name" "Hsin-Tung Tsao" "academic_info" "IAII, NYCU — M.S. 2026" "role" "Primary advisor:" "co_supervisor" "Jiun-Long Huang" "co_supervisor_url" "https://www.cs.nycu.edu.tw/members/detail/jlhuang" "topics" (slice "Sports Analysis" "Tactical Analysis") "initials" "HT" "avatar" "/uploads/members/hsin-tung-tsao.jpg")))
 }}
 
 <section class="lab-people">
@@ -35,6 +35,7 @@
               <div class="lab-avatar-placeholder" aria-hidden="true">{{ .initials }}</div>
             {{ end }}
             <h4>{{ .name }}</h4>
+            {{ with .academic_info }}<p class="lab-member-academic-info">{{ . }}</p>{{ end }}
             <p>
               {{ .role }}
               {{ with .co_supervisor }}

@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Hsu-Chao Lai 賴旭昭
+title: Hsu-Chao Lai · 賴旭昭
 
 # Name pronunciation (optional)
 name_pronunciation: ''

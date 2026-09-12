@@ -499,6 +499,7 @@
 .avatar, .lab-member-card img { opacity: 1; filter: none; mix-blend-mode: normal; }
 .lab-member-card h4 { margin: 0; font-size: 1.05rem; font-weight: 700; }
 .lab-member-card p { margin: .25rem 0 .75rem; color: #6b7280; font-size: .88rem; }
+.lab-member-card .lab-member-academic-info { margin-bottom: .1rem; font-weight: 500; }
 .lab-member-card .lab-member-contact-link { color: rgb(var(--color-primary-600)); text-decoration: underline; text-underline-offset: .15em; }
 .lab-member-card .lab-member-contact-link:hover { color: rgb(var(--color-primary-700)); }
 .lab-member-card > span { display: inline-block; padding: .25rem .55rem; border-radius: 9999px; background: rgb(var(--color-primary-100)); color: rgb(var(--color-primary-800)); font-size: .7rem; font-weight: 600; }
