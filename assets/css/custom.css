@@ -525,6 +525,10 @@
   .lab-people-grid:has(.lab-pi-card:only-child) { grid-template-columns: minmax(0, 31rem); }
 }
 
+@media (max-width: 1023px) {
+  .hb-sidebar-container { display: none; }
+}
+
 @media (max-width: 480px) {
   .lab-people-grid { grid-template-columns: minmax(0, min(17rem, 100%)); }
   .lab-people-grid:has(.lab-pi-card:only-child) { grid-template-columns: minmax(0, 20rem); }
