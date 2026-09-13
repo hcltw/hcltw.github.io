@@ -1,0 +1,19 @@
+---
+title: A Lightweight Peak Value Prediction Model for Time Series Data
+authors:
+- Ching-Ya Huang
+- Hsu-Chao Lai
+- Jiun-Long Huang
+- Tsung-Che Tsai
+- Ching-Po Cho
+- Chu-Chuan Lee
+date: '2025-01-01'
+publishDate: '2026-09-10T04:48:55.086045Z'
+publication_types:
+- paper-conference
+publication: '*Ubi-Media Computing, Pervasive Systems, Algorithms and Networks*'
+doi: 10.1007/978-981-96-6291-3_2
+links:
+- name: URL
+  url: https://doi.org/10.1007/978-981-96-6291-3_2
+---
