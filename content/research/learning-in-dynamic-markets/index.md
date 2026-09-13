@@ -20,6 +20,8 @@ references:
     venue: J. Supercomput.
 ---
 
-Markets evolve continuously under uncertainty. My research develops learning-based strategies that adapt to changing conditions, imperfect predictions, and delayed or partially observed outcomes.
+Market environments are inherently dynamic. Competition, participant behavior, and underlying conditions change over time, causing strategies built on static assumptions or historical patterns to become unreliable. We study adaptive decision-making under uncertainty, non-stationarity, and partially observed outcomes.
 
-Applications include real-time bidding in online advertising and pairs trading in financial markets, with an emphasis on robust decisions, structural changes, and efficient use of market feedback.
+We combine **reinforcement learning, censored-feedback modeling, robust estimation, and structural-break detection** to learn strategies from incomplete or noisy market signals. These methods address challenges such as unobserved auction prices, inaccurate click-through-rate predictions, delayed outcomes, and shifts in market regimes.
+
+Our applications include real-time bidding in online advertising and pairs trading in financial markets. Across these settings, we aim to develop strategies that use feedback efficiently, adapt to structural changes, and remain robust as market conditions evolve.

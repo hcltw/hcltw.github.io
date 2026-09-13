@@ -18,6 +18,8 @@ references:
     venue: WWW
 ---
 
-Online behavior is shaped by interaction. My research studies how streamer–viewer exchanges—such as donations and responses—and viewer–viewer relationships influence interests, engagement, and content over time.
+Social influence is not static. As people interact over time, their interests, relationships, and behaviors continuously shape one another. We are particularly interested in discovering emerging and previously overlooked forms of social interaction, and in understanding the new patterns of influence they create.
 
-By modeling these feedback loops, we can understand the co-evolution of communities and content, then build recommendations that respond to changing social dynamics rather than treating users as isolated individuals.
+We use **social attention mechanisms, coupled tensor factorization, and dual self-attention** to learn these temporal and relational dependencies. Live-streaming platforms provide one example, where previously underexplored donation-response exchanges between streamers and viewers, together with relationships among viewers, can jointly shape engagement and future interests.
+
+By modeling influence as a dynamic process rather than a fixed relationship, we seek to understand and predict how people, content, and communities co-evolve, and to develop socially aware learning methods for emerging interactive platforms.

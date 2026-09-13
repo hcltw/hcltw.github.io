@@ -18,6 +18,8 @@ references:
     venue: CIKM
 ---
 
-Individual preferences become diverse—and often conflicting—when people make decisions together. My research develops group recommendation methods that balance personal interests, social relationships, and feedback from multiple participants rather than optimizing for a single user.
+When people make decisions together, diverse and sometimes conflicting preferences make group recommendation more than a simple aggregation problem. We study methods that balance individual interests, social relationships, and collective satisfaction rather than optimizing for a single user.
 
-Applications include configuring shared virtual-reality shopping experiences and recommending multi-streaming activities. The goal is to find choices that work well for the group while preserving the preferences that matter to each member.
+We explore **multi-feedback learning, tensor-based models, and combinatorial optimization** to represent different preference signals and reconcile competing interests. These approaches jointly consider users, items, feedback, and group formation to recommend choices that work for the group without overlooking individual members.
+
+Our work applies these ideas to shared virtual-reality shopping and live multi-streaming, while extending toward emerging scenarios in which people interact, negotiate preferences, and make decisions together.

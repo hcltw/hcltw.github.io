@@ -18,6 +18,8 @@ references:
     venue: IEEE BigComp
 ---
 
-Movement in team sports is not an individual action: every decision depends on teammates, opponents, and the evolving rally. My research models these interactions to forecast player movement and reveal coordinated patterns in doubles badminton.
+Movement in team sports is not a collection of independent trajectories. Each player continuously responds to teammates, opponents, shot context, and the evolving spatial structure of the game. We study these dependencies to understand how coordinated movement and team tactics emerge over time.
 
-The broader goal is to turn tracking data into tactical insight—supporting performance analysis, strategy design, and a clearer understanding of how teams create and respond to space.
+We use **conditional generative models, interaction-aware trajectory modeling, and Transformers** to forecast player movements under uncertainty. By incorporating team and opponent dynamics together with shot-based, position-adaptive inference, these methods produce predictions that reflect player roles and the changing context of each rally.
+
+Starting with doubles badminton, we aim to transform movement and event data into interpretable tactical insights for performance analysis, strategy design, and decision support across team sports.

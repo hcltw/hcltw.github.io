@@ -18,6 +18,8 @@ references:
     venue: IEEE BigData
 ---
 
-Effective decision support must be technically sound and practical for the people it serves. In healthcare and long-term care, this means combining professional recommendations with each person's lifestyle, preferences, and everyday constraints.
+Effective decision support is not only about predicting the best action. Particularly in healthcare and long-term care, recommendations must reconcile professional knowledge and clinical effectiveness with each person's lifestyle, preferences, and everyday constraints.
 
-My research explores data-driven systems for real-world decisions, including gait assessment, power-efficient sleep-stage monitoring, and uncertainty-aware planning. The aim is AI that supports experts while remaining responsive to individual needs.
+We use **ensemble learning, confidence-aware adaptive inference, and hierarchical multi-agent decision-making** to integrate heterogeneous evidence, manage uncertainty, and determine how limited resources should be used. These methods support reliable decisions when measurements are noisy, computation is constrained, or multiple objectives interact.
+
+Our work includes spatio-temporal gait estimation, power-efficient sleep-stage classification on wearable devices, and uncertainty-aware planning. Building on these foundations, we aim to develop personalized care support that provides recommendations that are both professionally sound and practical in daily life.
