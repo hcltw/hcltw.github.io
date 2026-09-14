@@ -35,11 +35,7 @@ sections:
       title: '[LaMI Lab](/lab/) is Recruiting'
       subtitle: ''
       text: |-
-        - **Position:** Master's Students
-        - **Research Topics:** Recommender Systems, Social Networks, Intelligent Decision-Making, or other Data Mining and Machine Learning topics you are passionate about
-        - **Preferred Skills:** Python, basic machine learning, independent learning
-
-        To apply, email me with your CV, transcript, and a brief, relevant research proposal.
+        CGU LaMI welcomes passionate and creative M.S. students who enjoy exchanging ideas and working through research questions together. Please see the [Lab page](/lab/) for our research directions and complete application details.
     design:
       columns: '1'
       css_class: recruiting-students-section

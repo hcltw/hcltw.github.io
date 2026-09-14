@@ -471,6 +471,25 @@
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17 17 7M8 7h9v9'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
+.lab-recruiting {
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2.25rem 1.5rem;
+}
+
+.lab-recruiting-card {
+  padding: 1.5rem 1.75rem;
+  border: 1px dashed #e5e7eb;
+  border-radius: .2rem;
+  background: #fff;
+}
+
+.lab-recruiting-card h2 { display: flex; align-items: center; gap: .5rem; margin: 0 0 1rem; font-size: 1.5rem; font-weight: 700; }
+.lab-recruiting-card ul { margin: 0 0 1.15rem; padding-left: 1.3rem; list-style-type: square; }
+.lab-recruiting-card li + li { margin-top: .65rem; }
+.lab-recruiting-card p { margin: 0; color: #4b5563; line-height: 1.7; }
+
 /* Local Lab people template */
 .lab-people {
   width: 100%;
@@ -539,9 +558,13 @@
 .dark .lab-about-copy > p:last-child { color: #d1d5db; }
 .dark .lab-direction-list, .dark .lab-direction-list a { border-color: #374151; }
 .dark .lab-direction-list a::after { background: rgb(var(--color-primary-400)); }
+.dark .lab-recruiting-card { border-color: #374151; background: #161e28; }
+.dark .lab-recruiting-card h2 { color: #fff; }
+.dark .lab-recruiting-card p { color: #d1d5db; }
 
 @media (max-width: 767px) {
   .lab-about-research { grid-template-columns: 1fr; gap: 2rem; padding-top: 4rem; }
+  .lab-recruiting-card { padding: 1.5rem; }
   .lab-people-grid { grid-template-columns: repeat(2, minmax(0, 17rem)); }
   .lab-people-grid:has(.lab-member-card:only-child) { grid-template-columns: minmax(0, min(17rem, 100%)); }
   .lab-people-grid:has(.lab-pi-card:only-child) { grid-template-columns: minmax(0, 31rem); }
