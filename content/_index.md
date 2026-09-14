@@ -32,7 +32,7 @@ sections:
           parallax: false
   - block: markdown
     content:
-      title: '[LaMI Lab](/lab/) is Recruiting'
+      title: 'CGU LaMI Lab is Recruiting'
       subtitle: ''
       text: |-
         CGU LaMI welcomes passionate and creative M.S. students who enjoy exchanging ideas and working through research questions together. Please see the [Lab page](/lab/) for our research directions and complete application details.
