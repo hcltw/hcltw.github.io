@@ -283,6 +283,76 @@
   border-color: rgb(75 85 99);
 }
 
+.talks-view-all-button {
+  margin-top: 0;
+}
+
+.talks-dialog {
+  width: min(52rem, calc(100% - 2rem));
+}
+
+.talks-dialog-card {
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+}
+
+.talks-dialog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.talks-dialog-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.talks-dialog-list li:first-child {
+  padding-top: 0;
+}
+
+.talks-dialog-list li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.talks-dialog-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.talks-dialog-heading h4 {
+  margin: 0;
+  color: #111827;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.talks-dialog-list > li > span,
+.talks-dialog-list time {
+  display: block;
+  margin-top: .35rem;
+  color: #6b7280;
+  font-size: .875rem;
+  line-height: 1.4;
+}
+
+.dark .talks-dialog-list li {
+  border-color: #4b5563;
+}
+
+.dark .talks-dialog-heading h4 {
+  color: #fff;
+}
+
+.dark .talks-dialog-list > li > span,
+.dark .talks-dialog-list time {
+  color: #d1d5db;
+}
+
 /* Give the homepage recruiting copy room to breathe on desktop. */
 .recruiting-students-section > .flex {
   width: 100%;

@@ -25,7 +25,7 @@
   <section class="w-full">
     <h3 class="mb-8 text-center text-3xl font-bold text-gray-900 dark:text-white">{{ $block.content.talks_title }}</h3>
     <ol class="relative w-full border-s border-gray-200 dark:border-gray-700">
-      {{ range $block.content.talks }}
+      {{ range first 4 $block.content.talks }}
         <li class="mb-8 ms-6">
           <span class="absolute flex h-6 w-6 items-center justify-center rounded-full bg-primary-100 -start-3 ring-8 ring-white dark:bg-primary-900 dark:ring-gray-900">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-4 w-4 text-primary-800 dark:text-primary-300" aria-hidden="true">
@@ -43,5 +43,36 @@
         </li>
       {{ end }}
     </ol>
+
+    {{ if gt (len $block.content.talks) 4 }}
+      <button type="button" class="course-feedback-button talks-view-all-button" onclick="document.getElementById('all-talks-dialog').showModal()">
+        View all talks
+      </button>
+
+      <dialog id="all-talks-dialog" class="course-feedback-dialog talks-dialog" onclick="if (event.target === this) this.close()">
+        <div class="course-feedback-dialog-card talks-dialog-card">
+          <div class="course-feedback-dialog-header">
+            <div>
+              <h3>All Invited Talks &amp; Outreach</h3>
+              <p>{{ len $block.content.talks }} events, newest first</p>
+            </div>
+            <button type="button" class="course-feedback-close" aria-label="Close all talks" onclick="document.getElementById('all-talks-dialog').close()">&times;</button>
+          </div>
+
+          <ol class="talks-dialog-list">
+            {{ range $block.content.talks }}
+              <li>
+                <div class="talks-dialog-heading">
+                  <h4>{{ .title }}</h4>
+                  <span class="rounded bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ .type }}</span>
+                </div>
+                <span>{{ .venue }}</span>
+                <time datetime="{{ .date }}">{{ (time .date) | time.Format "January 2006" }}</time>
+              </li>
+            {{ end }}
+          </ol>
+        </div>
+      </dialog>
+    {{ end }}
   </section>
 </div>

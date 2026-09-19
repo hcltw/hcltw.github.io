@@ -45,6 +45,10 @@ sections:
       experience_title: Experience
       talks_title: Invited Talks & Outreach
       talks:
+        - title: 'AIGC Inflation: Can Recommender Systems Still Understand User Preferences?'
+          venue: Department of Artificial Intelligence, Chang Gung University
+          date: 2026-09-01
+          type: Seminar
         - title: What Is Machine Learning? Build Your Own Game Controller with AI
           venue: Tatung High School
           date: 2026-07-01
