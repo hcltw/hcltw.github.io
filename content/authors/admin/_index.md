@@ -82,8 +82,8 @@ work:
     company_name: University of Illinois at Chicago (UIC)
     company_url: ''
     company_logo: ''
-    date_start: 2022-08-01
-    date_end: 2023-07-31
+    date_start: 2021-08-01
+    date_end: 2022-07-31
     summary: |
       Responsibilities include:
       - Designed a novel framework by recognizing and using the co-evolution on live stream platforms to recommend next-topics for live streamers, which outperforms conventional video recommenders by 27.1\% in terms of precision and recall (CIKM 2023)
@@ -92,7 +92,7 @@ work:
     company_url: ''
     company_logo: ''
     date_start: 2016-12-28
-    date_end: 2022-07-31
+    date_end: 2021-07-31
     summary: |
       Responsibilities include:
       - Leveraged viewer-streamer interactions on live streams and proposed a tensor co-factorization recommendation system, which reduces nearly 50\% model parameters compared to SOTA methods (CIKM 2020)
