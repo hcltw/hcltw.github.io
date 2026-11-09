@@ -22,15 +22,13 @@
 }
 
 /* Match top-level landing-page headings to the Publications page title. */
-.blox-markdown.consistent-page-heading .text-3xl,
-.blox-resume-experience.consistent-page-heading .w-full:first-child > h3:first-child {
+.blox-markdown.consistent-page-heading .text-3xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
 @media (min-width: 1024px) {
-  .blox-markdown.consistent-page-heading .text-3xl,
-  .blox-resume-experience.consistent-page-heading .w-full:first-child > h3:first-child {
+  .blox-markdown.consistent-page-heading .text-3xl {
     font-size: 3.75rem;
     line-height: 1;
   }
@@ -294,6 +292,50 @@
 .talks-dialog-card {
   max-height: calc(100vh - 2rem);
   overflow-y: auto;
+}
+
+.talks-dialog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 0 0 1rem;
+}
+
+.talks-dialog-filter {
+  padding: .35rem .75rem;
+  border: 1px solid rgb(var(--color-primary-300));
+  border-radius: 9999px;
+  background: transparent;
+  color: rgb(var(--color-primary-700));
+  font-size: .8rem;
+  font-weight: 600;
+  line-height: 1.25;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+
+.talks-dialog-filter:hover {
+  background: rgb(var(--color-primary-100));
+}
+
+.talks-dialog-filter[aria-pressed="true"] {
+  border-color: rgb(var(--color-primary-800));
+  background: rgb(var(--color-primary-800));
+  color: #fff;
+}
+
+.dark .talks-dialog-filter {
+  border-color: rgb(var(--color-primary-600));
+  color: rgb(var(--color-primary-300));
+}
+
+.dark .talks-dialog-filter:hover {
+  background: rgb(var(--color-primary-900));
+}
+
+.dark .talks-dialog-filter[aria-pressed="true"] {
+  border-color: rgb(var(--color-primary-300));
+  background: rgb(var(--color-primary-300));
+  color: #111827;
 }
 
 .talks-dialog-list {

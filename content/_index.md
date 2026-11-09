@@ -45,6 +45,10 @@ sections:
       experience_title: Experience
       talks_title: Invited Talks & Outreach
       talks:
+        - title: 'Hands-on Project: Design Your Own AI Agent'
+          venue: Department of Nursing, National Sun Yat-sen University
+          date: 2026-11-01
+          type: Workshop
         - title: 'AIGC Inflation: Can Recommender Systems Still Understand User Preferences?'
           venue: Department of Artificial Intelligence, Chang Gung University
           date: 2026-09-01

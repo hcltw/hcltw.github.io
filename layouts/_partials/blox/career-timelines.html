@@ -59,9 +59,28 @@
             <button type="button" class="course-feedback-close" aria-label="Close all talks" onclick="document.getElementById('all-talks-dialog').close()">&times;</button>
           </div>
 
+          {{ $talk_types := slice }}
+          {{ range $block.content.talks }}
+            {{ if not (in $talk_types .type) }}
+              {{ $talk_types = $talk_types | append .type }}
+            {{ end }}
+          {{ end }}
+          <div class="talks-dialog-filters" aria-label="Filter talks by type">
+            {{ range $talk_types }}
+              <button
+                type="button"
+                class="talks-dialog-filter"
+                data-talk-filter="{{ . | urlize }}"
+                aria-pressed="false"
+                onclick="toggleTalkFilter(this)">
+                {{ . }}
+              </button>
+            {{ end }}
+          </div>
+
           <ol class="talks-dialog-list">
             {{ range $block.content.talks }}
-              <li>
+              <li data-talk-type="{{ .type | urlize }}">
                 <div class="talks-dialog-heading">
                   <h4>{{ .title }}</h4>
                   <span class="rounded bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">{{ .type }}</span>
@@ -73,6 +92,23 @@
           </ol>
         </div>
       </dialog>
+
+      <script>
+        function toggleTalkFilter(button) {
+          const dialog = button.closest('.talks-dialog');
+          const selectedType = button.dataset.talkFilter;
+          const wasSelected = button.getAttribute('aria-pressed') === 'true';
+
+          dialog.querySelectorAll('.talks-dialog-filter').forEach((filterButton) => {
+            const isSelected = !wasSelected && filterButton === button;
+            filterButton.setAttribute('aria-pressed', String(isSelected));
+          });
+
+          dialog.querySelectorAll('[data-talk-type]').forEach((talk) => {
+            talk.hidden = !wasSelected && talk.dataset.talkType !== selectedType;
+          });
+        }
+      </script>
     {{ end }}
   </section>
 </div>

@@ -12,10 +12,6 @@ last_name: Lai
 # Pronouns (optional)
 pronouns: 
 
-# Status emoji
-# status:
-#   icon: ☕️
-
 # Is this the primary user of the site?
 superuser: true
 
@@ -70,113 +66,24 @@ education:
 work:
   - position: Assistant Professor
     company_name: Chang Gung University
-    company_url: 'https://www.cgu.edu.tw/ai-en/'
-    company_logo: ''
     date_start: 2026-02-01
     date_end:
-    summary: |2-
-      Responsibilities include:
-      - Conduct research in recommender systems, social network analysis, and interdisciplinary data mining, with applications in healthcare, sports analytics, online platforms, and intelligent decision-making
-      - Teach courses in Data Mining and Graph Mining and Learning
   - position: Visiting Scholar
     company_name: University of Illinois at Chicago (UIC)
-    company_url: ''
-    company_logo: ''
     date_start: 2021-08-01
     date_end: 2022-07-31
-    summary: |
-      Responsibilities include:
-      - Designed a novel framework by recognizing and using the co-evolution on live stream platforms to recommend next-topics for live streamers, which outperforms conventional video recommenders by 27.1\% in terms of precision and recall (CIKM 2023)
   - position: Research Assistant
-    company_name: InformationInstitute of Information Science, Academia Sinica
-    company_url: ''
-    company_logo: ''
+    company_name: Institute of Information Science, Academia Sinica
     date_start: 2016-12-28
     date_end: 2021-07-31
-    summary: |
-      Responsibilities include:
-      - Leveraged viewer-streamer interactions on live streams and proposed a tensor co-factorization recommendation system, which reduces nearly 50\% model parameters compared to SOTA methods (CIKM 2020)
-      - Identified a novel scenario of Virtual Reality (VR) group shopping and designed an effective recommender system and a query system, respectively (CIKM 2019 and VLDB 2020)
-      - Cooperated with experts from different domains, including Sociology (6 teams), Physics and Biology (15 teams from 4 research institutes), and developed machine learning models for social sentiment analysis and drosophila neuron identifications (Physics Reports 2023)
-      - Organized and analyzed results of four user studies and managed large-scale crowd-sourcing data annotations in four papers (one published in AAAI 2018, two in CIKM 2019, and one in VLDB 2020)
   - position: Student Research Assistant
     company_name: cacaFly Inc.
-    company_url: ''
-    company_logo: ''
     date_start: 2015-02-01
     date_end: 2016-01-31
-    summary: |
-      Responsibilities include:
-      - Used Lasso Regression model to improve the efficiency of CTR prediction by 61\% without loss of precision
   - position: Summer Intern
     company_name: Taiwan Semiconductor Manufacturing Company (TSMC)
-    company_url: ''
-    company_logo: ''
     date_start: 2014-07-01
     date_end: 2014-08-31
-    summary: |
-      Responsibilities include:
-      - Incorporated a C4.5 Decision Tree model to identify causes of memory failure from sensor data with at least 98\% accuracy and 40x speedup
-      - Built a rule-based FP tree model to generate reports of defects on wafers from manufacture data without human involving
-
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
-# skills:
-#   - name: Technical Skills
-#     items:
-#       - name: Python
-#         description: ''
-#         percent: 80
-#         icon: code-bracket
-#       - name: Data Science
-#         description: ''
-#         percent: 100
-#         icon: chart-bar
-#       - name: SQL
-#         description: ''
-#         percent: 40
-#         icon: circle-stack
-#   - name: Hobbies
-#     color: '#eeac02'
-#     color_border: '#f0bf23'
-#     items:
-#       - name: Coffee
-#         description: ''
-#         percent: 100
-#         icon: custom/coffee
-#       - name: Cats
-#         description: ''
-#         percent: 100
-#         icon: cat
-#       - name: Photography
-#         description: ''
-#         percent: 80
-#         icon: camera
-
-languages:
-  - name: English
-    percent: 90
-  - name: Mandarin
-    percent: 100
-  - name: Taiwanese
-    percent: 25
-
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-awards:
-  - title: Grants for Graduate Students Study Abroad Program
-    url: ''
-    date: 2021-12-01
-    awarder: MOST Taiwan
-    icon: custom/taiwan
-  - title: Semi-finalist and IBM SPSS Modeler Best Application Award
-    url: ''
-    date: 2015-08-31
-    awarder: Taiwan Semiconductor Manufacturing Company (TSMC) 
-    icon: custom/tsmc
-  
 ---
 
 ## About Me
