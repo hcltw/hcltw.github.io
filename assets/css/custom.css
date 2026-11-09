@@ -313,10 +313,6 @@
   transition: background-color .15s ease, border-color .15s ease, color .15s ease;
 }
 
-.talks-dialog-filter:hover {
-  background: rgb(var(--color-primary-100));
-}
-
 .talks-dialog-filter[aria-pressed="true"] {
   border-color: rgb(var(--color-primary-800));
   background: rgb(var(--color-primary-800));
@@ -326,10 +322,6 @@
 .dark .talks-dialog-filter {
   border-color: rgb(var(--color-primary-600));
   color: rgb(var(--color-primary-300));
-}
-
-.dark .talks-dialog-filter:hover {
-  background: rgb(var(--color-primary-900));
 }
 
 .dark .talks-dialog-filter[aria-pressed="true"] {
