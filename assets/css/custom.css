@@ -290,8 +290,10 @@
 }
 
 .talks-dialog-card {
-  max-height: calc(100vh - 2rem);
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: min(42rem, calc(100vh - 2rem));
+  overflow: hidden;
 }
 
 .talks-dialog-filters {
@@ -331,8 +333,11 @@
 }
 
 .talks-dialog-list {
+  flex: 1;
+  min-height: 0;
   margin: 0;
-  padding: 0;
+  padding: 0 .35rem 0 0;
+  overflow-y: auto;
   list-style: none;
 }
 
