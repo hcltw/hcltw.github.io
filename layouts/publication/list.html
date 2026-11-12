@@ -12,12 +12,26 @@
 
 {{ $view := .Params.view | default "citation" }}
 {{ $block := . }}
+{{ $preprints := where .Pages "Params.publication_types" "intersect" (slice "preprint") }}
 {{ $journals := where .Pages "Params.publication_types" "intersect" (slice "article-journal") }}
 {{ $conferences := where .Pages "Params.publication_types" "intersect" (slice "paper-conference") }}
 {{ $number := newScratch }}
-{{ $number.Set "value" (len .Pages) }}
+{{ $number.Set "value" (add (len $journals) (len $conferences)) }}
 
 <div class="publication-sections">
+  {{ if $preprints }}
+    <section class="publication-section" aria-labelledby="preprints">
+      <h2 id="preprints">Preprints</h2>
+      <ul class="publication-preprint-list">
+        {{ range $index, $item := $preprints.ByDate.Reverse }}
+          <li>
+            {{ partial "functions/render_view" (dict "page" $block "item" . "view" $view "index" $index) }}
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
   <section class="publication-section" aria-labelledby="journal-articles">
     <h2 id="journal-articles">Journal Articles</h2>
     <div class="publication-list">
