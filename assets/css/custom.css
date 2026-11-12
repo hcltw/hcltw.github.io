@@ -669,6 +669,7 @@
 .lab-member-card .lab-member-avatar img { max-width: none; margin: 0; border-radius: 0; object-fit: contain; }
 .lab-member-avatar.lab-avatar-frame-wang img { width: 122%; height: 122%; object-fit: cover; }
 .lab-member-card img.lab-avatar-tsai { object-position: center 35%; }
+.lab-member-card img.lab-avatar-hemanth { object-position: center; }
 .lab-member-github-spacer { width: 1.25rem; height: 1.3rem; margin: 0 auto; }
 .lab-member-card > span { display: inline-block; padding: .25rem .55rem; border-radius: 9999px; background: rgb(var(--color-primary-100)); color: rgb(var(--color-primary-800)); font-size: .7rem; font-weight: 600; }
 .lab-member-card > span + span { margin-left: .35rem; }
